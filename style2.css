@@ -38,34 +38,18 @@ body{
 
 .para1{
     color: rgba(114, 0, 2, 1);
-    font-size: 75px;
-    margin-top: 120px;
     font-family: "Archivo Black", sans-serif;
-    font-weight: bolder;
-    font-style: normal;
 }
 
 .para2{
     color: rgba(174, 0, 3, 1);
-    font-weight: bold;
-    font-size: 38px;
-    font-style: normal;
 }
 
 #search{
     color: black;
     background-color: rgba(15, 11, 11, 0.3);
     border-color: transparent;
-    border-radius:50px;
-    width: 38em;
-    height: 50px;
-    margin-top: 40px;
-    overflow: hidden;
     box-shadow: 5px 10px 10px rgb(80, 80, 80);
-}
-
-.artist{
-    margin: 10px;
 }
 
 .img1{
