@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="crazy.css">
     <style>
         body {
-            margin: 10px;
+            background: linear-gradient(135deg, #198754, #000000);
+
         }
     </style>
 </head>
@@ -26,7 +28,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="d-flex justify-content-center align-items-center flex-grow-1">
-                    <ul class="navbar-nav ">
+                    <ul class="navbar-nav list-unstyled">
                         <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
                         <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Artists</a></li>
                         <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
@@ -56,7 +58,7 @@
             </div>
             <div class="offcanvas-body">
                 <div class="container-fluid">
-                    <ul class="d-flex align-items-center justify-content-center flex-column ">
+                    <ul class="d-flex align-items-center justify-content-center flex-column list-unstyled">
                         <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
                         <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Artists</a></li>
                         <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
@@ -71,27 +73,56 @@
         </div>
     </div>
 
-    <div class="container my-3">
+    <div class="container my-3 h-100">
         <div class="row d-flex flex-lg-row flex-column ">
             <div class="col d-lg-none ime">
-                <p class="fs-1  fw-medium text-center ">Join the Premium</p>
+                <p class="fs-1 fw-bold text-center ">Join the Premium</p>
             </div>
             <div class="col d-flex justify-content-center align-items-center col-lg-8"> <img src="images/no-image.png"
                     class="rounded img-fluid" alt=""></div>
             <div class="col d-flex align-items-center justify-content-center flex-column m-2 m-lg-0 col-lg-4 ">
-                <p class="fs-3 fw-medium text-center d-none d-lg-block ">Join the Premium</p>
+                <p class=" d-none d-lg-block text-center fs-1 fw-bold ">Join the Premium</p>
                 <p class="fs-5 ">Listen without limits. Try 2 months of Premium for ₹119.</p>
-                <button type="button" class="btn btn-success p-3 my-1">Get Premium for ₹119</button>
-                <button type="button" class="btn btn-success p-3 my-1">View Offers</button>
+                <div class="container">
+                    <button type="button" class="btn btn-success p-3 my-1">Get Premium for ₹119</button>
+                    <button type="button" class="btn btn-success p-3 my-1">View Offers</button>
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="container">
+        <div class="row mb-0 pb-0">
+            <p class="text-center fs-1 fw-bold bg-success ">Compare Plans</p>
+        </div>
+        <div class="row mt-0 pt-0">
+            <div class="col text-center">
+                <p class="fs-2 fw-semibold ">Free Version</p>
+                <ul class=" fs-4 fw-light list-unstyled ">
+                    <li><strong>Ad-Supported</strong></li>
+                    <li>Limited Skips</li>
+                    <li>Standard Audio Quality</li>
+                    <li>Online Streaming Only</li>
+                    <li>Basic Playlists</li>
+                </ul>
+            </div>
+            <div class="col text-center">
+                <p class="fs-2 fw-semibold ">Premium Version</p>
+                <ul class=" fs-4 fw-light list-unstyled">
+                    <li><strong>Ad-Free Experience</strong></li>
+                    <li>Unlimited Skips</li>
+                    <li>High-Quality Audio</li>
+                    <li>Offline Listening</li>
+                    <li>Personalized AI Playlists</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <div class="container my-5">
-        <div class="row my-1">
+    <div class="container my-lg-5 my-3">
+        <div class="row my-1 justify-content-center d-flex">
 
-             <!-- Individual -->
+            <!-- Individual -->
 
             <div class="col col-lg-4 m-lg-0 m-3 d-flex justify-content-center align-items-center">
                 <div class="card" style="width: 20rem;">
@@ -110,11 +141,13 @@
                             </ul>
                         </div>
                         <div class="d-flex justify-content-center align-items-center">
-                            <button type="button" class="btn btn-outline-primary rounded">Try free for 2 months</button>
+                            <button type="button" class="btn btn-outline-success rounded">Try free for 2 months</button>
                         </div>
-                        <div><p class="fs-6 fw-light my-3">
-                            Offer only available if you haven't tried Premium before.
-                        </p></div>
+                        <div>
+                            <p class="fs-6 fw-light my-3">
+                                Offer only available if you haven't tried Premium before.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -135,15 +168,18 @@
                                 <li>
                                     2 Premium accounts</li>
                                 <li>Cancel anytime</li>
-                                <li>15 hours/month of listening time from our audiobooks subscriber catalog (plan manager only)</li>
+                                <li>15 hours/month of listening time from our audiobooks subscriber catalog (plan
+                                    manager only)</li>
                             </ul>
                         </div>
                         <div class="d-flex justify-content-center align-items-center">
-                            <button type="button" class="btn btn-outline-primary rounded">Try free for 2 months</button>
+                            <button type="button" class="btn btn-outline-success rounded">Try free for 2 months</button>
                         </div>
-                        <div><p class="fs-6 fw-light my-3">
-                            Offer only available if you haven't tried Premium before.
-                        </p></div>
+                        <div>
+                            <p class="fs-6 fw-light my-3">
+                                Offer only available if you haven't tried Premium before.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -163,19 +199,22 @@
                             <ul>
                                 <li>Up to 6 Premium </li>
                                 <li>Cancel anytime</li>
-                                <li>15 hours/month of listening time from our audiobooks subscriber catalog (plan manager only)</li>
+                                <li>15 hours/month of listening time from our audiobooks subscriber catalog (plan
+                                    manager only)</li>
                             </ul>
                         </div>
                         <div class="d-flex justify-content-center align-items-center">
-                            <button type="button" class="btn btn-outline-primary rounded">Get Premium Family</button>
+                            <button type="button" class="btn btn-outline-success rounded">Get Premium Family</button>
                         </div>
-                        <div><p class="fs-6 fw-light my-3">
-                            For up to 6 family members residing at the same address.
-                        </p></div>
+                        <div>
+                            <p class="fs-6 fw-light my-3">
+                                For up to 6 family members residing at the same address.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </div>
 
     <div class="container mt-5 text-center">
@@ -183,23 +222,28 @@
         <div class="accordion my-3" id="faqAccordion">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Is there a free trial available?
                     </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Yes! We offer a 14-day free trial for our Premium plan. Experience all the features without any commitment.
+                        Yes! We offer a 14-day free trial for our Premium plan. Experience all the features without any
+                        commitment.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Are there any discounts for annual subscriptions?
                     </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
                         Absolutely! Subscribe annually and save 15% compared to monthly billing.
                     </div>
@@ -207,47 +251,58 @@
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         What payment methods do you accept?
                     </button>
                 </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        We accept major credit cards (Visa, MasterCard, American Express) and PayPal for your convenience.
+                        We accept major credit cards (Visa, MasterCard, American Express) and PayPal for your
+                        convenience.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         Is there a money-back guarantee?
                     </button>
                 </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Yes, we offer a 30-day money-back guarantee. If you’re not satisfied with your subscription, simply contact us for a full refund.
+                        Yes, we offer a 30-day money-back guarantee. If you’re not satisfied with your subscription,
+                        simply contact us for a full refund.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#headingFive" aria-expanded="false" aria-controls="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#headingFive" aria-expanded="false" aria-controls="headingFive">
                         Can I upgrade or downgrade my plan later?
                     </button>
                 </h2>
-                <div id="headingFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div id="headingFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Yes, you can upgrade or downgrade your plan at any time. Changes will take effect at the end of your current billing cycle.
+                        Yes, you can upgrade or downgrade your plan at any time. Changes will take effect at the end of
+                        your current billing cycle.
                     </div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                         Are there any additional fees?
                     </button>
                 </h2>
-                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="collapseSix" data-bs-parent="#faqAccordion">
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="collapseSix"
+                    data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
                         There are no hidden fees. What you see in our pricing is what you pay!
                     </div>
@@ -255,20 +310,45 @@
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                         Can I switch plans at any time?
                     </button>
                 </h2>
-                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Yes, you can switch plans whenever you want. Simply go to your account settings to make the change.
+                        Yes, you can switch plans whenever you want. Simply go to your account settings to make the
+                        change.
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-
     </div>
+    <footer>
+        <div class="container mt-5 pt-3 ">
+            <div class="row d-flex justify-content-center ">
+                <div class="col">
+                    <div class="fs-2 fw-medium"><a href="#">JamSpot</a></div>
+                    <div class="fs-5">© 2024 JamSpot. All rights not reserved.</div>
+                </div>
+                <div class="col d-none d-sm-block">
+                    <div><a href="#"><i class="bi bi-instagram"></i> Instagram</a></div>
+                    <div><a href="#"><i class="bi bi-twitter-x"></i> Twitter</a></div>
+                    <div><a href="#"><i class="bi bi-facebook"></i> Facebook</a></div>
+                    <div><a href="#"><i class="bi bi-youtube"></i> Youtube</a></div>
+                    <div><a href="#"><i class="bi bi-spotify"></i> Spotify</a></div>
+                </div>
+                <div class="col d-block">
+                    <div><a href="#">Legal & Privacy</a></div>
+                    <div><a href="#">Privacy Policy</a></div>
+                    <div><a href="#">Terms & Conditions</a></div>
+                    <div><a href="#"><i class="bi bi-cookie"></i> Cookie Policy</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
