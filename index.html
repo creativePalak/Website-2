@@ -1,76 +1,276 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background: linear-gradient(90deg, #000000, #05031a, black);
+      background-repeat: no-repeat;
+    }
+
+    .main-container {
+      background-image: url("images/image.png");
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .songs {
+      background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(3,3,91,0.989) 41%, rgba(9,9,88,1) 60%, rgba(31,60,122,0.930) 79%, rgba(0,0,0,0.387) 100%);
+      cursor: pointer;
+    }
+
+    #search {
+      background-color: rgb(146, 146, 155);
+    }
+
+  
+    .custom-img{
+      cursor: pointer;
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .custom-img:hover {
+      transform: scale(1.05);
+    }
+
+    .songs:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
-            <h1 id="website-name" class="fw-bolder">JamSpot</h1>
-            <button class="navbar-toggler btn btn-outline-dark" tclass="btn btn-primary" type="button"data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="d-flex justify-content-center align-items-center flex-grow-1">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Artists</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Albums</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Podcasts</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
-                    </ul>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <button class="btn m-2 join">Sign Up</button>
-                    <button class="btn m-2 join">Login</button>
-                </div>
-            </div>
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid text-white">
+        <h1 id="website-name">JamSpot</h1>
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex justify-content-center align-items-center flex-grow-1">
+            <ul class="navbar-nav">
+              <li class="nav-item h5 p-3"><a class="nav-link" href="index.html" id="tabs">Home</a></li>
+              <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Artists</a></li>
+              <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
+              <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Playlists</a></li>
+              <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
+            </ul>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button class="btn text-white join">Sign Up</button>
+            <button class="btn text-white join">Login</button>
+          </div>
         </div>
-        </div>
+      </div>
     </nav>
+  </main>
 
-
-    <div class="main-content"></div>
-        <div class="container ">
-            <div class="row d-flex justify-content-center ">
-              <h1 class="para1 mt-5 fw-bolder display-1 text-center lh-base">JOIN THE FUN</h1>
-              <h4 class="para2 fw-bold display-6 text-center lh-base">FEEL THE PULSE AT THE JAMSPOT</h4>
-              <input class="form-control form-control-lg mt-2 rounded-pill w-50" type="search" id="search" placeholder="Search"></input>
+  <div class="container-fluid">
+    <div class="main-container p-4">
+      <div class="d-flex justify-content-center">
+        <input class="form-control form-control-lg m-4 rounded-pill w-50" type="search" id="search" placeholder="Search">
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 m-2 text-white songs p-1">
+          <div class="row align-items-center">
+            <div class="col-1 fs-4">01</div>
+            <div class="col d-flex">
+              <img src="images/s1.jpeg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
+              <div>
+                <div class="fs-5">Tum hi ho</div>
+                <small class="">Aashqui 2</small>
+              </div>
             </div>
+            <div class="col-2">05:00</div>
+          </div>
         </div>
-        <div class="container w-50 slider">
-            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/song1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/song2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/song3.jpg" class="d-block w-100" alt="...">
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 m-2 text-white songs p-1">
+          <div class="row align-items-center">
+            <div class="col-1 fs-4">02</div>
+            <div class="col d-flex">
+              <img src="images/s2.jpg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
+              <div>
+                <div class="fs-5">Tum hi Aana</div>
+                <small class="">Marjaavaan</small>
+              </div>
             </div>
+            <div class="col-2">05:00</div>
+          </div>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 m-2 text-white songs p-1">
+          <div class="row align-items-center">
+            <div class="col-1 fs-4">03</div>
+            <div class="col d-flex">
+              <img src="images/s3.jpeg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
+              <div>
+                <div class="fs-5">Darasal</div>
+                <small class="">Raabta</small>
+              </div>
+            </div>
+            <div class="col-2">05:00</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 m-2 text-white songs p-1">
+          <div class="row align-items-center">
+            <div class="col-1 fs-4">04</div>
+            <div class="col d-flex">
+              <img src="images/s4.jpg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
+              <div>
+                <div class="fs-5">Challa</div>
+                <small class="">Jab Tak Hai Jaan</small>
+              </div>
+            </div>
+            <div class="col-2">05:00</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 m-2 text-white songs p-1">
+          <div class="row align-items-center">
+            <div class="col-1 fs-4">05</div>
+            <div class="col d-flex">
+              <img src="images/s5.jpg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
+              <div>
+                <div class="fs-5">Ve Kamleya</div>
+                <small class="">Rocky Aur Rani Ki Prem Khaani</small>
+              </div>
+            </div>
+            <div class="col-2">05:00</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 m-2 text-white songs p-1">
+          <div class="row align-items-center">
+            <div class="col-1 fs-4">06</div>
+            <div class="col d-flex">
+              <img src="images/s6.jpg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
+              <div>
+                <div class="fs-5">Teri Galliyan</div>
+                <small class="">Ek Villian</small>
+              </div>
+            </div>
+            <div class="col-2">05:00</div>
+          </div>
+        </div>
+      </div>
+      
     </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="trending-songs">
+      <div class="row">
+        <div class="fs-2 text-white text-center mt-5 mb-4 fw-medium">Trending Songs</div>
+        <div class="col ms-5 p-3">
+          <img src="images/song1.jpg" class="rounded img-fluid custom-img" alt="Song 1">
+        </div>
+        <div class="col p-3">
+          <img src="images/song2.jpg" class="rounded img-fluid custom-img" alt="Song 2">
+        </div>
+        <div class="col p-3">
+          <img src="images/song3.jpg" class="rounded img-fluid custom-img" alt="Song 3">
+        </div>
+        <div class="col p-3">
+          <img src="images/song4.jpg" class="rounded img-fluid custom-img" alt="Song 4">
+        </div>
+        <div class="col p-3">
+          <img src="images/song5.jpg" class="rounded img-fluid custom-img" alt="Song 5">
+        </div>
+        <div class="col me-4 p-3">
+          <img src="images/song6.jpeg" class="rounded img-fluid custom-img" alt="Song 6">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="top-artists">
+      <div class="row">
+        <div class="fs-2 text-white text-center mt-5 mb-4 fw-medium">Top Artists</div>
+        <div class="col ms-5 p-3">
+          <img src="images/arijit singh.jpeg" class="rounded-circle img-fluid custom-img" alt="Song 1">
+        </div>
+        <div class="col p-3">
+          <img src="images/shreya ghoshal.png" class="rounded-circle img-fluid custom-img" alt="Song 2">
+        </div>
+        <div class="col p-3">
+          <img src="images/atif aslam.png" class="rounded-circle img-fluid custom-img" alt="Song 2">
+        </div>
+        <div class="col p-3">
+          <img src="images/kk.jpg" class="rounded-circle img-fluid custom-img" alt="Song 2">
+        </div>
+        <div class="col p-3">
+          <img src="images/dr.jpg" class="rounded-circle img-fluid custom-img" alt="Song 2">
+        </div>
+        <div class="col me-4 p-3">
+          <img src="images/ks.jpg" class="rounded-circle img-fluid custom-img" alt="Song 6">
+        </div>
+      </div>
+    </div>
+
+    <div class="90s">
+      <div class="row">
+        <div class="fs-2 text-white text-center mt-5 mb-4 fw-medium">90's Songs</div>
+        <div class="col ms-5 p-3">
+          <img src="images/90s1.jpg" class="rounded img-fluid custom-img" alt="Song 1">
+        </div>
+        <div class="col p-3">
+          <img src="images/90s2.jpg" class="rounded img-fluid custom-img" alt="Song 2">
+        </div>
+        <div class="col p-3">
+          <img src="images/90s3.jpg" class="rounded img-fluid custom-img" alt="Song 3">
+        </div>
+        <div class="col p-3">
+          <img src="images/90s4.jpg" class="rounded img-fluid custom-img" alt="Song 4">
+        </div>
+        <div class="col p-3">
+          <img src="images/90s5.jpg" class="rounded img-fluid custom-img" alt="Song 5">
+        </div>
+        <div class="col me-4 p-3">
+          <img src="images/90s6.jpg" class="rounded img-fluid custom-img" alt="Song 6">
+        </div>
+      </div>
+    </div>
+
+    <div class="playlists">
+      <div class="row">
+        <div class="fs-2 text-white text-center mt-5 mb-4 fw-medium">Top Playlists</div>
+        <div class="col ms-5 p-3">
+          <img src="images/happy.jpg" class="rounded img-fluid custom-img" alt="Song 1">
+        </div>
+        <div class="col p-3">
+          <img src="images/peace.jpg" class="rounded img-fluid custom-img" alt="Song 2">
+        </div>
+        <div class="col p-3">
+          <img src="images/monsson.jpg" class="rounded img-fluid custom-img" alt="Song 3">
+        </div>
+        <div class="col p-3">
+          <img src="images/rock.jpg" class="rounded img-fluid custom-img" alt="Song 4">
+        </div>
+        <div class="col p-3">
+          <img src="images/lofi.jpg" class="rounded img-fluid custom-img" alt="Song 5">
+        </div>
+        <div class="col me-4 p-3">
+          <img src="images/travel.jpg" class="rounded img-fluid custom-img" alt="Song 6">
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </body>
-</html>        
-        
+</html>
