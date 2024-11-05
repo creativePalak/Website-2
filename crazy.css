@@ -47,6 +47,13 @@ body {
     color: white;
 }
 
+footer {
+    background-color: #1a237e;
+    background-color: #0d1b2a;
+    background: linear-gradient(135deg, #512da8, #000000);
+    background: linear-gradient(135deg, #512da8, #1c1c2e);
+}
+
 
 .box {
     margin-top: 6rem;
