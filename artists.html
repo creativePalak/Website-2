@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist X - Official Website</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom Crazy CSS -->
+    <style>
+        /* Body Background */
+        body {
+            background: linear-gradient(45deg, #ff6ec7, #ff8b94, #ffac81, #fbab7e);
+            background-size: 400% 400%;
+            animation: gradientBackground 15s ease infinite;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Hero Section Styling */
+        .hero-section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-section h1 {
+            font-size: 6rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            background: linear-gradient(to right, #ff6ec7, #ff8b94);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: textGlow 1.5s ease-in-out infinite alternate;
+        }
+
+        /* Text Glow Animation */
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 105, 180, 0.7); }
+            100% { text-shadow: 0 0 30px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 105, 180, 0.8); }
+        }
+
+        /* Button Styling */
+        .btn-custom {
+            background-color: #ff8b94;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 50px;
+            letter-spacing: 2px;
+            color: white;
+            box-shadow: 0 8px 15px rgba(255, 105, 180, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #fbab7e;
+            transform: scale(1.1);
+            box-shadow: 0 12px 30px rgba(255, 105, 180, 0.7);
+        }
+
+        /* Card Styles for Albums */
+        .card-custom {
+            border: none;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+        }
+
+        .card-body h5 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-body p {
+            font-size: 1rem;
+        }
+
+        /* Parallax Background Section */
+        .parallax {
+            background-image: url('https://via.placeholder.com/1500x900/ff6ec7/fff?text=Artist+Background');
+            height: 500px;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Artist X</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div>
+        <h1>Artist X</h1>
+        <p class="lead">Experience the Sound of Tomorrow</p>
+        <a href="#about" class="btn btn-custom">Explore More</a>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about" class="container py-5">
+    <h2 class="display-4 text-center mb-4">About Artist X</h2>
+    <p class="lead text-center">Artist X is a revolutionary music artist known for blending genres like never before. Get ready for an unforgettable auditory experience!</p>
+</div>
+
+<!-- Parallax Section -->
+<div class="parallax"></div>
+
+<!-- Gallery Section -->
+<div id="gallery" class="container py-5">
+    <h2 class="display-4 text-center mb-4 text-white">Music Gallery</h2>
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom">
+                <img src="https://via.placeholder.com/500x500/ff6ec7/fff?text=Album+1" class="card-img-top" alt="Album 1">
+                <div class="card-body">
+                    <h5 class="card-title">Album 1</h5>
+                    <p class="card-text">Released in 2024. A perfect blend of pop and electronic beats.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom">
+                <img src="https://via.placeholder.com/500x500/ff6ec7/fff?text=Album+2" class="card-img-top" alt="Album 2">
+                <div class="card-body">
+                    <h5 class="card-title">Album 2</h5>
+                    <p class="card-text">Released in 2023. A deep dive into experimental music and ambient sounds.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom">
+                <img src="https://via.placeholder.com/500x500/ff6ec7/fff?text=Album+3" class="card-img-top" alt="Album 3">
+                <div class="card-body">
+                    <h5 class="card-title">Album 3</h5>
+                    <p class="card-text">Released in 2022. A mix of rock, jazz, and funk.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Artist X. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and Popper -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
