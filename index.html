@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <style>
@@ -43,13 +44,36 @@
     .songs:hover {
       transform: scale(1.05);
     }
+
+    .col div a {
+    text-decoration: none;
+    color: #b1b0d2;
+}
+
+.col div a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.login-container {
+  max-height: 100%;
+  max-width: 100%;
+  background-image: url("images/Screenshot\ 2024-10-30\ 030309.png");
+  border-radius: 5%;
+  box-shadow: 1rem 1rem 3rem rgba(8, 12, 123, 0.7);
+}
+  
+.welcome{
+  font-weight:bolder;
+}
+
   </style>
 </head>
 <body>
   <main>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid text-white">
-        <h1 id="website-name">JamSpot</h1>
+        <h1 id="website-name" class="p-1"><i class="fa-solid fa-circle-play"></i>JamSpot</h1>
         <button class="navbar-toggler" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -65,8 +89,38 @@
             </ul>
           </div>
           <div class="d-flex justify-content-end">
-            <button class="btn text-white join">Sign Up</button>
-            <button class="btn text-white join">Login</button>
+            <a href="sign.html"><button class="btn text-white join">Sign Up</button></a>
+            <button class="btn text-white join">Login
+              <div class="container mt-5">
+                <button class="btn text-white join" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog p-4">
+                      <div class="login-container p-5 text-white mt-5">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="text-center welcome fs-1">Welcome Back!</div>
+                        <small class="d-flex justify-content-center fs-5">Did you miss us?</small>
+                        <form>
+                          <div class="form-group m-4">
+                            <label for="username" class="mb-1">Username or Email</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+                          </div>
+                          <div class="form-group m-4">
+                            <label for="password" class="mb-1">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                          </div>
+                          <button type="submit" class="btn btn-primary mt-4 d-flex justify-content-center">Login</button>
+                          <div class="text-center mt-2">
+                            <div class="text-decoration-none"><a href="#" class="text-decoration-none">Forgot password?</a>
+                              <a href="sign.html" class="text-decoration-none">Create an account</a></div>
+                            </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </button>
           </div>
         </div>
       </div>
@@ -79,37 +133,44 @@
         <input class="form-control form-control-lg m-4 rounded-pill w-50" type="search" id="search" placeholder="Search">
       </div>
       <div class="row">
-        <div class="col-12 col-md-6 m-2 text-white songs p-1">
-          <div class="row align-items-center">
-            <div class="col-1 fs-4">01</div>
-            <div class="col d-flex">
-              <img src="images/s1.jpeg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
-              <div>
-                <div class="fs-5">Tum hi ho</div>
-                <small class="">Aashqui 2</small>
-              </div>
+        <div class="col-12 col-md-6 m-2 text-white songs p-1 id="playPauseBtn1" onclick="toggleAudio('audio1', 'playPauseBtn1')"">
+            <div class="row align-items-center">
+                <div class="col-1 fs-4">01</div>
+                <div class="col d-flex">
+                    <img src="images/s1.jpeg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
+                    <div>
+                        <div class="fs-5">Tum Hi Ho</div>
+                        <small>Aashiqui 2</small>
+                    </div>
+                </div>
+                <div class="col-2 m-2">
+                    <i class="fa-solid fa-play m-2" id="playPauseBtn1" onclick="toggleAudio('audio1', 'playPauseBtn1')"></i>03:30
+                    <audio id="audio1" src="audio/Tum Hi Ho - Aashiqui 2 128 Kbps.mp3"></audio>
+                </div>
             </div>
-            <div class="col-2">05:00</div>
-          </div>
         </div>
+    </div>
+    
+      <div class="row">
+          <div class="col-12 col-md-6 m-2 text-white songs p-1 id="playPauseBtn2" onclick="toggleAudio('audio2', 'playPauseBtn2')"">
+              <div class="row align-items-center">
+                  <div class="col-1 fs-4">02</div>
+                  <div class="col d-flex">
+                      <img src="images/s2.jpg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
+                      <div>
+                          <div class="fs-5">Tum Hi Aana</div>
+                          <small>Marjaavaan</small>
+                      </div>
+                  </div>
+                  <div class="col-2 m-2">
+                      <i class="fa-solid fa-play m-2" id="playPauseBtn2" onclick="toggleAudio('audio2', 'playPauseBtn2')"></i>05:00
+                      <audio id="audio2" src="audio/Tum Hi Aana - Marjaavaan 128 Kbps.mp3"></audio>
+                  </div>
+              </div>
+          </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-6 m-2 text-white songs p-1">
-          <div class="row align-items-center">
-            <div class="col-1 fs-4">02</div>
-            <div class="col d-flex">
-              <img src="images/s2.jpg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
-              <div>
-                <div class="fs-5">Tum hi Aana</div>
-                <small class="">Marjaavaan</small>
-              </div>
-            </div>
-            <div class="col-2">05:00</div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6 m-2 text-white songs p-1">
+        <div class="col-12 col-md-6 m-2 text-white songs p-1 id="playPauseBtn3" onclick="toggleAudio('audio3', 'playPauseBtn3')">
           <div class="row align-items-center">
             <div class="col-1 fs-4">03</div>
             <div class="col d-flex">
@@ -119,12 +180,15 @@
                 <small class="">Raabta</small>
               </div>
             </div>
-            <div class="col-2">05:00</div>
+            <div class="col-2 m-2">
+              <i class="fa-solid fa-play m-2" id="playPauseBtn3" onclick="toggleAudio('audio3', 'playPauseBtn3')"></i>03:30
+              <audio id="audio3" src="audio/Darasal - Raabta 128 Kbps.mp3"></audio>
+            </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-6 m-2 text-white songs p-1">
+        <div class="col-12 col-md-6 m-2 text-white songs p-1 id="playPauseBtn4" onclick="toggleAudio('audio4', 'playPauseBtn4')">
           <div class="row align-items-center">
             <div class="col-1 fs-4">04</div>
             <div class="col d-flex">
@@ -134,12 +198,14 @@
                 <small class="">Jab Tak Hai Jaan</small>
               </div>
             </div>
-            <div class="col-2">05:00</div>
+            <div class="col-2 m-2">
+              <i class="fa-solid fa-play m-2" id="playPauseBtn4" onclick="toggleAudio('audio4', 'playPauseBtn4')"></i>03:30
+              <audio id="audio4" src="audio/Challa - Jab Tak Hai Jaan 128 Kbps.mp3"></audio>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-6 m-2 text-white songs p-1">
+        <div class="col-12 col-md-6 m-2 text-white songs p-1 id="playPauseBtn5" onclick="toggleAudio('audio5', 'playPauseBtn5')">
           <div class="row align-items-center">
             <div class="col-1 fs-4">05</div>
             <div class="col d-flex">
@@ -149,12 +215,14 @@
                 <small class="">Rocky Aur Rani Ki Prem Khaani</small>
               </div>
             </div>
-            <div class="col-2">05:00</div>
+            <div class="col-2 m-2">
+              <i class="fa-solid fa-play m-2" id="playPauseBtn5" onclick="toggleAudio('audio5', 'playPauseBtn5')"></i>03:30
+              <audio id="audio5" src="audio/Ve Kamleya-(Mr-Jat.in).mp3"></audio>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-6 m-2 text-white songs p-1">
+        <div class="col-12 col-md-6 m-2 text-white songs p-1 id="playPauseBtn6" onclick="toggleAudio('audio6', 'playPauseBtn6')">
           <div class="row align-items-center">
             <div class="col-1 fs-4">06</div>
             <div class="col d-flex">
@@ -164,11 +232,12 @@
                 <small class="">Ek Villian</small>
               </div>
             </div>
-            <div class="col-2">05:00</div>
+            <div class="col-2 m-2">
+              <i class="fa-solid fa-play m-2" id="playPauseBtn6" onclick="toggleAudio('audio6', 'playPauseBtn6')"></i>03:30
+              <audio id="audio6" src="audio/Galliyan - Ek Villain 128 Kbps.mp3"></audio>
           </div>
         </div>
       </div>
-      
     </div>
   </div>
 
@@ -290,5 +359,40 @@
     </div>
   </div>
   
+
+  <script>
+    function toggleAudio(audioId, buttonId) {
+        const audio = document.getElementById(audioId);
+        const button = document.getElementById(buttonId);
+
+        // Check if the audio is currently playing
+        if (audio.paused) {
+            // Pause other audios
+            const audios = document.querySelectorAll('audio');
+            audios.forEach(otherAudio => {
+                if (otherAudio !== audio) {
+                    otherAudio.pause();
+                    otherAudio.currentTime = 0; // Reset the other audio
+                    // Reset the button to play icon
+                    const otherButton = document.querySelector(`i[id="${otherAudio.id.replace('audio', 'playPauseBtn')}"]`);
+                    if (otherButton) {
+                        otherButton.classList.remove('fa-pause');
+                        otherButton.classList.add('fa-play');
+                    }
+                }
+            });
+
+            // Play the audio
+            audio.play();
+            button.classList.remove('fa-play');
+            button.classList.add('fa-pause');
+        } else {
+            // Pause the audio
+            audio.pause();
+            button.classList.remove('fa-pause');
+            button.classList.add('fa-play');
+        }
+    }
+</script>
 </body>
 </html>

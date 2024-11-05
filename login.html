@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: transparent;
+        }
+        .login-container {
+            max-width: 26rem;
+            background-image: url("images/Screenshot\ 2024-10-30\ 030309.png");
+            border-radius: 5%;
+            box-shadow: 1rem 1rem 3rem rgba(8, 12, 123, 0.7);
+        }
+        .welcome{
+            font-weight:bolder;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="login-container p-5 text-white mt-5">
+        <div class="text-center welcome h1">Welcome Back!</div>
+        <form>
+            <div class="form-group mt-4">
+                <label for="username">Username or Email</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block mt-4">Login</button>
+            <div class="text-center mt-2">
+                <a href="#">Forgot password?</a>
+                <a href="sign.html">Create an account</a>
+            </div>
+            <div class="mt-4">
+                <a href="index.html" class="text-white"><i class="fa-solid fa-arrow-left m-2"></i>Back</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
