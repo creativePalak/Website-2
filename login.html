@@ -8,13 +8,17 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background: transparent;
+            background-image: url("https://images.unsplash.com/photo-1528645602411-bbeb0d69a6de?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGRhcmslMjBiYWNrZ3JvdW5kJTIwbXVzaWN8ZW58MHx8MHx8fDA%3D");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         }
         .login-container {
-            max-width: 26rem;
-            background-image: url("images/Screenshot\ 2024-10-30\ 030309.png");
+            max-width: 30rem;          
             border-radius: 5%;
-            box-shadow: 1rem 1rem 3rem rgba(8, 12, 123, 0.7);
+            box-shadow: 1rem 1rem 3rem rgba(12, 12, 12, 0.7);
+            backdrop-filter: blur(30px);
+            border: 2px solid rgba(255,255,255,0.18);
         }
         .welcome{
             font-weight:bolder;
@@ -23,8 +27,7 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="login-container p-5 text-white mt-5">
+<div class="container-fluid login-container p-5 text-white mt-5">
         <div class="text-center welcome h1">Welcome Back!</div>
         <form>
             <div class="form-group mt-4">
@@ -44,7 +47,6 @@
                 <a href="index.html" class="text-white"><i class="fa-solid fa-arrow-left m-2"></i>Back</a>
             </div>
         </form>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
