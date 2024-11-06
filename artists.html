@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
     <style>
         /* Body Background */
         body {
-            background: linear-gradient(45deg, #ff6ec7, #ff8b94, #ffac81, #fbab7e);
+            background-color: rgb(0, 0, 34);
             background-size: 400% 400%;
             animation: gradientBackground 15s ease infinite;
             color: white;
@@ -41,7 +41,7 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 5px;
-            background: linear-gradient(to right, #ff6ec7, #ff8b94);
+            background-color: white;
             -webkit-background-clip: text;
             color: transparent;
             animation: textGlow 1.5s ease-in-out infinite alternate;
@@ -49,29 +49,30 @@
 
         /* Text Glow Animation */
         @keyframes textGlow {
-            0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 105, 180, 0.7); }
-            100% { text-shadow: 0 0 30px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 105, 180, 0.8); }
+            0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(11, 68, 255, 0.7); }
+            100% { text-shadow: 0 0 30px rgba(255, 255, 255, 0.9), 0 0 40px rgba(11, 68, 255, 0.7); }
         }
 
         /* Button Styling */
         .btn-custom {
-            background-color: #ff8b94;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-radius: 50px;
-            letter-spacing: 2px;
-            color: white;
-            box-shadow: 0 8px 15px rgba(255, 105, 180, 0.5);
-            transition: transform 0.3s ease;
+            background-color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    color: #000000;
+    box-shadow: 0 8px 15px rgba(15, 44, 209, 0.5);
+    transition: transform 0.3s ease;
         }
 
         .btn-custom:hover {
-            background-color: #fbab7e;
+            background-color: #000000;
+            color: white;
             transform: scale(1.1);
-            box-shadow: 0 12px 30px rgba(255, 105, 180, 0.7);
+            box-shadow: 0 8px 15px rgba(255, 255, 255, 0.5);
         }
 
         /* Card Styles for Albums */
@@ -110,7 +111,7 @@
 
         /* Parallax Background Section */
         .parallax {
-            background-image: url('https://via.placeholder.com/1500x900/ff6ec7/fff?text=Artist+Background');
+            background-image: url('https://t3.ftcdn.net/jpg/02/23/60/54/360_F_223605406_nGKtPp42ZRx4ZxvrcVeT3Ek6V5Uw4ETh.jpg');
             height: 500px;
             background-attachment: fixed;
             background-size: cover;
@@ -130,45 +131,56 @@
 <body>
 
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">Artist X</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#gallery">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <h1 id="website-name">JamSpot</h1>
+            <button class="navbar-toggler btn btn-outline-dark" tclass="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex justify-content-center align-items-center flex-grow-1">
+                    <ul class="navbar-nav list-unstyled" >
+                        <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
+                        <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
+                        <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
+                        <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Albums</a></li>
+                        <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button class="btn m-2 join" >Sign Up</button>
+                    <button class="btn m-2 join" >Login</button>
+                </div>
+            </div>
     </div>
+</div>  
 </nav>
 
-<!-- Hero Section -->
-<div class="hero-section">
-    <div>
-        <h1>Artist X</h1>
-        <p class="lead">Experience the Sound of Tomorrow</p>
-        <a href="#about" class="btn btn-custom">Explore More</a>
+  <!-- this is offcanvas code --> 
+<div class="container">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"><p class="fs-2 fw-medium">JamSpot</p></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+      </div>
+      <div class="offcanvas-body">
+        <div class="container-fluid">
+            <ul class="d-flex align-items-center justify-content-center flex-column list-unstyled">
+                <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
+                <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Artists</a></li>
+                <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
+                <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Albums</a></li>
+                <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Podcasts</a></li>
+                <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
+                <li class="nav-item h5 p-3 mt-5"><a class="nav-link" href="" id="tabs">Login</a></li>
+                <li class="nav-item h5 p-3 "><a class="nav-link" href="" id="tabs">Sign up</a></li>
+            </ul>
+        </div>
+      </div>
     </div>
 </div>
 
-<!-- About Section -->
-<div id="about" class="container py-5">
-    <h2 class="display-4 text-center mb-4">About Artist X</h2>
-    <p class="lead text-center">Artist X is a revolutionary music artist known for blending genres like never before. Get ready for an unforgettable auditory experience!</p>
-</div>
-
-<!-- Parallax Section -->
-<div class="parallax"></div>
 
 <!-- Gallery Section -->
 <div id="gallery" class="container py-5">
@@ -177,30 +189,70 @@
         <!-- Card 1 -->
         <div class="col-md-4 mb-4">
             <div class="card card-custom">
-                <img src="https://via.placeholder.com/500x500/ff6ec7/fff?text=Album+1" class="card-img-top" alt="Album 1">
+                <img src="images/peace.jpg" class="card-img-top" alt="Album 1">
                 <div class="card-body">
-                    <h5 class="card-title">Album 1</h5>
-                    <p class="card-text">Released in 2024. A perfect blend of pop and electronic beats.</p>
+                    <h5 class="card-title">Peace </h5>
+                    <p class="card-text">A peace playlist wraps you in calming melodies, creating a serene atmosphere for relaxation and mindfulness.</p>
                 </div>
             </div>
         </div>
         <!-- Card 2 -->
         <div class="col-md-4 mb-4">
             <div class="card card-custom">
-                <img src="https://via.placeholder.com/500x500/ff6ec7/fff?text=Album+2" class="card-img-top" alt="Album 2">
+                <img src="images/monsson.jpg" class="card-img-top" alt="Album 2">
                 <div class="card-body">
-                    <h5 class="card-title">Album 2</h5>
-                    <p class="card-text">Released in 2023. A deep dive into experimental music and ambient sounds.</p>
+                    <h5 class="card-title">Monsoon </h5>
+                    <p class="card-text">A monsoon playlist captures the rhythm of rain, blending soothing melodies with nature's symphony to create a cozy, reflective mood.</p>
                 </div>
             </div>
         </div>
         <!-- Card 3 -->
         <div class="col-md-4 mb-4">
             <div class="card card-custom">
-                <img src="https://via.placeholder.com/500x500/ff6ec7/fff?text=Album+3" class="card-img-top" alt="Album 3">
+                <img src="images/travel.jpg" class="card-img-top" alt="Album 3">
                 <div class="card-body">
-                    <h5 class="card-title">Album 3</h5>
-                    <p class="card-text">Released in 2022. A mix of rock, jazz, and funk.</p>
+                    <h5 class="card-title">Travel </h5>
+                    <p class="card-text"> A travel playlist sparks adventure, with energetic tunes and laid-back rhythms that make every journey feel like a new exploration. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Parallax Section -->
+<div class="parallax"></div>
+
+<!-- Gallery Section -->
+<div id="gallery" class="container py-5">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4 ">
+            <div class="card card-custom">
+                <img src="images/happy.jpg" class="card-img-top" alt="Album 1">
+                <div class="card-body">
+                    <h5 class="card-title">Happy </h5>
+                    <p class="card-text">A happy playlist fills the air with upbeat tunes, spreading joy and positivity with every song.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4 ">
+            <div class="card card-custom">
+                <img src="images/lofi.jpg" class="card-img-top" alt="Album 2">
+                <div class="card-body">
+                    <h5 class="card-title">Lofi </h5>
+                    <p class="card-text">A lo-fi creates a chill, laid-back vibe, perfect for relaxing, studying, or unwinding after a long day.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4 ">
+            <div class="card card-custom">
+                <img src="images/rock.jpg" class="card-img-top" alt="Album 3">
+                <div class="card-body">
+                    <h5 class="card-title">Rock </h5>
+                    <p class="card-text"> rock  fuels your soul with electrifying riffs and raw energy, perfect for unleashing your inner rebel. </p>
                 </div>
             </div>
         </div>
