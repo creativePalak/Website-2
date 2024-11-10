@@ -12,8 +12,31 @@
     <link rel="stylesheet" href="crazy.css">
     <style>
         body {
-            background: linear-gradient(135deg, #198754, #000000);
 
+            background-image: url("https://img.freepik.com/free-vector/gradient-music-notes-background_23-2151320190.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .heading{
+            color: #e8c9ff;
+            font-size: 3.5rem ;
+            text-shadow: 5px 10px 20px blue;
+        }
+
+        .card .list{
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            background: linear-gradient(120deg,rgb(2, 2, 87),rgb(98, 3, 79));
+            transform: translateY(-10px);
+            box-shadow: 0 10px 12px rgba(167, 165, 245, 0.5);
+        }
+
+        .list:hover{
+            color: rgb(214, 168, 0);
+            font-size: 1.5rem;
         }
     </style>
 </head>
@@ -39,8 +62,8 @@
                     </ul>
                 </div>
                 <div class="d-flex justify-content-end">
-                    <button class="btn m-2 join">Sign Up</button>
-                    <button class="btn m-2 join">Login</button>
+                    <a href="sign.html"><button class="btn btn-outline-light m-2 join">Sign Up</button></a>
+                    <a href="login.html"><button class="btn m-2 join">Login</button></a>
                 </div>
             </div>
         </div>
@@ -69,8 +92,8 @@
                         <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
                     </ul>
                     <div class="d-flex justify-content-end mt-5">
-                        <button class="btn btn-primary m-2 join text-white">Sign Up</button>
-                        <button class="btn m-2 join btn-outline-light text-white">Login</button>
+                        <a href="sign.html"><button class="btn btn-primary m-2 join text-white">Sign Up</button></a>
+                        <a href="login.html"><button class="btn m-2 join btn-outline-light text-white">Login</button></a>
                     </div>
                 </div>
             </div>
@@ -78,47 +101,48 @@
     </div>
 
 
+
     <div class="container my-3 h-100">
         <div class="row d-flex flex-lg-row flex-column ">
-            <div class="col d-lg-none ime">
-                <p class="fs-1 fw-bold text-center ">Join the Premium</p>
+            <div class="col d-lg-none">
+                <p class=" fw-bolder text-center heading ">Join the Premium</p>
             </div>
-            <div class="col d-flex justify-content-center align-items-center col-lg-8"> <img src="images/no-image.png"
-                    class="rounded img-fluid" alt=""></div>
+            <div class="col d-flex justify-content-center align-items-center col-lg-8"> <img src="https://png.pngtree.com/thumb_back/fh260/background/20230627/pngtree-d-mobile-marketing-passive-income-coins-and-banknotes-floating-on-a-image_3687396.jpg"
+                    class="rounded-5 img-fluid m-3" alt=""></div>
             <div class="col d-flex align-items-center justify-content-center flex-column m-2 m-lg-0 col-lg-4 ">
                 <p class=" d-none d-lg-block text-center fs-1 fw-bold ">Join the Premium</p>
                 <p class="fs-5 ">Listen without limits. Try 2 months of Premium for ₹119.</p>
                 <div class="container">
-                    <button type="button" class="btn btn-success p-3 my-1">Get Premium for ₹119</button>
-                    <button type="button" class="btn btn-success p-3 my-1">View Offers</button>
+                    <button type="button" class="btn btn-primary rounded-pill p-3 my-1">Get Premium for ₹119</button>
+                    <button type="button" class="btn btn-outline-light rounded-pill p-3 ms-1 my-1">View Offers</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row mb-0 pb-0">
-            <p class="text-center fs-1 fw-bold bg-success ">Compare Plans</p>
+    <div class="container mt-5">
+        <div class="row mt-2 p-1 d-flex justify-content-center">
+            <p class="text-center fs-1 fw-bold border border-3 rounded-5 border-primary w-50">Compare Plans</p>
         </div>
-        <div class="row mt-0 pt-0">
-            <div class="col text-center">
-                <p class="fs-2 fw-semibold ">Free Version</p>
-                <ul class=" fs-4 fw-light list-unstyled ">
-                    <li><strong>Ad-Supported</strong></li>
-                    <li>Limited Skips</li>
-                    <li>Standard Audio Quality</li>
-                    <li>Online Streaming Only</li>
-                    <li>Basic Playlists</li>
+        <div class="row m-1">
+            <div class="col text-center ">
+                <p class="fs-1 fw-bold heading">Free Version</p>
+                <ul class=" fs-4 list-unstyled ">
+                    <li class="list">Ad-Supported</li>
+                    <li class="list">Limited Skips</li>
+                    <li class="list">Standard Audio Quality</li>
+                    <li class="list">Online Streaming Only</li>
+                    <li class="list">Basic Playlists</li>
                 </ul>
             </div>
             <div class="col text-center">
-                <p class="fs-2 fw-semibold ">Premium Version</p>
-                <ul class=" fs-4 fw-light list-unstyled">
-                    <li><strong>Ad-Free Experience</strong></li>
-                    <li>Unlimited Skips</li>
-                    <li>High-Quality Audio</li>
-                    <li>Offline Listening</li>
-                    <li>Personalized AI Playlists</li>
+                <p class="fs-1 fw-bold heading ">Premium Version</p>
+                <ul class=" fs-4 list-unstyled">
+                    <li class="list">Ad-Free Experience</li>
+                    <li class="list">Unlimited Skips</li>
+                    <li class="list">High-Quality Audio</li>
+                    <li class="list">Offline Listening</li>
+                    <li class="list">Personalized AI Playlists</li>
                 </ul>
             </div>
         </div>
@@ -129,15 +153,15 @@
 
             <!-- Individual -->
 
-            <div class="col col-lg-4 m-lg-0 m-3 d-flex justify-content-center align-items-center">
-                <div class="card" style="width: 20rem;">
-                    <div class="card-header fw-medium fs-5 bg-success">
+            <div class="col col-lg-4 m-lg-0 m-3 d-flex justify-content-center">
+                <div class="card" style="width: 22rem;">
+                    <div class="card-header fw-medium fs-5 bg-primary">
                         Premium
                     </div>
                     <div class="card-body">
                         <h5 class="card-title fs-1 fw-bold">Individual</h5>
-                        <div class=""><span>Free for 2 months </span></div>
-                        <div class="pb-4 border-bottom"><span>$11.99 / month after</span></div>
+                        <div class="">Free for 2 months </div>
+                        <div class="pb-3 border-bottom">$11.99 / month after</div>
                         <div class="mt-3">
                             <ul>
                                 <li>1 Premium account</li>
@@ -145,8 +169,8 @@
                                 <li>15 hours/month of listening time from our audiobooks subscriber catalog</li>
                             </ul>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button type="button" class="btn btn-outline-success rounded">Try free for 2 months</button>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-outline-primary rounded">Try free for 2 months</button>
                         </div>
                         <div>
                             <p class="fs-6 fw-light my-3">
@@ -159,15 +183,15 @@
 
             <!-- Student -->
 
-            <div class="col col-lg-4 m-lg-0 m-3 d-flex justify-content-center align-items-center">
-                <div class="card" style="width: 20rem;">
-                    <div class="card-header fw-medium fs-5 bg-success">
+            <div class="col col-lg-4 m-lg-0 m-3 d-flex justify-content-center">
+                <div class="card" style="width: 22rem;">
+                    <div class="card-header fw-medium fs-5 bg-primary">
                         Premium
                     </div>
                     <div class="card-body">
                         <h5 class="card-title fs-1 fw-bold">Student</h5>
-                        <div class=""><span>Free for 2 months </span></div>
-                        <div class="pb-4 border-bottom"><span>$16.99 / month</span></div>
+                        <div class="">Free for 2 months</div>
+                        <div class="pb-4 border-bottom">$16.99 / month</div>
                         <div class="mt-3">
                             <ul>
                                 <li>
@@ -177,8 +201,8 @@
                                     manager only)</li>
                             </ul>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button type="button" class="btn btn-outline-success rounded">Try free for 2 months</button>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-outline-primary rounded">Try free for 2 months</button>
                         </div>
                         <div>
                             <p class="fs-6 fw-light my-3">
@@ -191,15 +215,15 @@
 
             <!-- Family -->
 
-            <div class="col col-lg-4 m-lg-0 m-3 d-flex justify-content-center align-items-center">
-                <div class="card" style="width: 20rem;">
-                    <div class="card-header fw-medium fs-5 bg-success">
+            <div class="col col-lg-4 m-lg-0 m-3 d-flex justify-content-center">
+                <div class="card" style="width: 22rem;">
+                    <div class="card-header fw-medium fs-5 bg-primary">
                         Premium
                     </div>
                     <div class="card-body ">
                         <h5 class="card-title fs-1 fw-bold">Family</h5>
-                        <div class=""><span>Free for 2 months </span></div>
-                        <div class="pb-4 border-bottom"><span>$19.99 / month</span></div>
+                        <div class="">Free for 2 months</div>
+                        <div class="pb-4 border-bottom">$19.99 / month</div>
                         <div class="mt-3">
                             <ul>
                                 <li>Up to 6 Premium </li>
@@ -208,8 +232,8 @@
                                     manager only)</li>
                             </ul>
                         </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <button type="button" class="btn btn-outline-success rounded">Get Premium Family</button>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-outline-primary rounded">Get Premium Family</button>
                         </div>
                         <div>
                             <p class="fs-6 fw-light my-3">
@@ -331,21 +355,23 @@
         </div>
     </div>
     </div>
+
+
     <footer>
-        <div class="container mt-5 pt-3 ">
-            <div class="row d-flex justify-content-center ">
+        <div class="container text-center text-white p-5">
+            <div class="row">
                 <div class="col">
-                    <div class="fs-2 fw-medium"><a href="#">JamSpot</a></div>
-                    <div class="fs-5">© 2024 JamSpot. All rights not reserved.</div>
+                    <div><a href="#">JamSpot</a></div>
+                    <div>&copy; 2024 JamSpot. All rights not reserved.</div>
                 </div>
-                <div class="col d-none d-sm-block">
-                    <div><a href="#"><i class="bi bi-instagram"></i> Instagram</a></div>
-                    <div><a href="#"><i class="bi bi-twitter-x"></i> Twitter</a></div>
-                    <div><a href="#"><i class="bi bi-facebook"></i> Facebook</a></div>
-                    <div><a href="#"><i class="bi bi-youtube"></i> Youtube</a></div>
-                    <div><a href="#"><i class="bi bi-spotify"></i> Spotify</a></div>
+                <div class="col footer-icons m-3">
+                    <a href="#"><i class="bi bi-instagram p-2"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x p-2"></i></a>
+                    <a href="#"><i class="bi bi-facebook p-2"></i></a>
+                    <a href="#"><i class="bi bi-youtube p-2"></i></a>
+                    <a href="#"><i class="bi bi-spotify p-2"></i></a>
                 </div>
-                <div class="col d-block">
+                <div class="col ">
                     <div><a href="#">Legal & Privacy</a></div>
                     <div><a href="#">Privacy Policy</a></div>
                     <div><a href="#">Terms & Conditions</a></div>
@@ -354,6 +380,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
