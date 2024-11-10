@@ -1,272 +1,252 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artist X - Official Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Singers Section</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Custom Crazy CSS -->
-    <style>
-        /* Body Background */
-        body {
-            background-color: rgb(0, 0, 34);
-            background-size: 400% 400%;
-            animation: gradientBackground 15s ease infinite;
-            color: white;
-            font-family: 'Arial', sans-serif;
-            overflow-x: hidden;
-        }
+    .singers-section {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+    }
 
-        @keyframes gradientBackground {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+    .singers-section h2 {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
 
-        /* Hero Section Styling */
-        .hero-section {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: relative;
-        }
+    .singer-card {
+      position: relative;
+      background-color: #333;
+      margin: 15px;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
 
-        .hero-section h1 {
-            font-size: 6rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            background-color: white;
-            -webkit-background-clip: text;
-            color: transparent;
-            animation: textGlow 1.5s ease-in-out infinite alternate;
-        }
+    .singer-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
 
-        /* Text Glow Animation */
-        @keyframes textGlow {
-            0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(11, 68, 255, 0.7); }
-            100% { text-shadow: 0 0 30px rgba(255, 255, 255, 0.9), 0 0 40px rgba(11, 68, 255, 0.7); }
-        }
+    .singer-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
 
-        /* Button Styling */
-        .btn-custom {
-            background-color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 50px;
-    letter-spacing: 2px;
-    color: #000000;
-    box-shadow: 0 8px 15px rgba(15, 44, 209, 0.5);
-    transition: transform 0.3s ease;
-        }
+    .singer-card:hover img {
+      transform: scale(1.1);
+    }
 
-        .btn-custom:hover {
-            background-color: #000000;
-            color: white;
-            transform: scale(1.1);
-            box-shadow: 0 8px 15px rgba(255, 255, 255, 0.5);
-        }
+    .singer-card .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
 
-        /* Card Styles for Albums */
-        .card-custom {
-            border: none;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-            border-radius: 20px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    .singer-card:hover .overlay {
+      opacity: 1;
+    }
 
-        .card-custom:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
-        }
+    .singer-card .overlay .details {
+      text-align: center;
+      color: white;
+    }
 
-        .card-img-top {
-            height: 300px;
-            object-fit: cover;
-        }
+    .singer-card .overlay .details h4 {
+      font-size: 2rem;
+      font-family: 'Russo One', sans-serif;
+      margin-bottom: 10px;
+    }
 
-        .card-body {
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
-            text-align: center;
-        }
+    .singer-card .overlay .details p {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
 
-        .card-body h5 {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
+    .social-icons a {
+      color: #FF6347;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
 
-        .card-body p {
-            font-size: 1rem;
-        }
+    .social-icons a:hover {
+      color: #ffffff;
+    }
 
-        /* Parallax Background Section */
-        .parallax {
-            background-image: url('https://t3.ftcdn.net/jpg/02/23/60/54/360_F_223605406_nGKtPp42ZRx4ZxvrcVeT3Ek6V5Uw4ETh.jpg');
-            height: 500px;
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
+    @media (max-width: 768px) {
+      .singer-card {
+        width: 100%;
+      }
+    }
 
-        /* Footer Section */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+    .singer-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .singer-card {
+      width: 280px;
+      height: 350px;
+    }
+  </style>
 </head>
+
 <body>
-
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-custom">
+  <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container-fluid">
-        <h1 id="website-name">JamSpot</h1>
-            <button class="navbar-toggler btn btn-outline-dark" tclass="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="d-flex justify-content-center align-items-center flex-grow-1">
-                    <ul class="navbar-nav list-unstyled" >
-                        <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Albums</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
-                    </ul>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <button class="btn m-2 join" >Sign Up</button>
-                    <button class="btn m-2 join" >Login</button>
-                </div>
-            </div>
+      <h1 id="website-name">JamSpot</h1>
+      <button class="navbar-toggler btn btn-outline-dark" tclass="btn btn-primary" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex justify-content-center align-items-center flex-grow-1">
+          <ul class="navbar-nav list-unstyled">
+            <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
+            </li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button class="btn m-2 join">Sign Up</button>
+          <button class="btn m-2 join">Login</button>
+        </div>
+      </div>
     </div>
-</div>  
-</nav>
+    </div>
+  </nav>
 
-  <!-- this is offcanvas code --> 
-<div class="container">
+  <!-- this is offcanvas code -->
+  <div class="container">
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel"><p class="fs-2 fw-medium">JamSpot</p></h5>
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <p class="fs-2 fw-medium">JamSpot</p>
+        </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
       </div>
       <div class="offcanvas-body">
         <div class="container-fluid">
-            <ul class="d-flex align-items-center justify-content-center flex-column list-unstyled">
-                <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
-                <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Artists</a></li>
-                <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
-                <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Albums</a></li>
-                <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Podcasts</a></li>
-                <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
-                <li class="nav-item h5 p-3 mt-5"><a class="nav-link" href="" id="tabs">Login</a></li>
-                <li class="nav-item h5 p-3 "><a class="nav-link" href="" id="tabs">Sign up</a></li>
-            </ul>
+          <ul class="d-flex align-items-center justify-content-center flex-column list-unstyled">
+            <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
+            </li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
+          </ul>
+          <div class="d-flex justify-content-end mt-5">
+            <button class="btn btn-primary m-2 join text-white">Sign Up</button>
+            <button class="btn m-2 join btn-outline-light text-white">Login</button>
+          </div>
         </div>
       </div>
     </div>
-</div>
+  </div>
 
+  <!-- Singers Section -->
+  <section class="singers-section" id="singers">
+    <h2>Meet the Singers</h2>
+    <div class="singer-gallery container">
+      <!-- Singer 1 -->
+      <div class="singer-card">
+        <img src="images/shreya ghoshal.png" alt="Singer 1">
+        <div class="overlay">
+          <div class="details">
+            <h4>Shreya Ghoshal</h4>
+            <p>Bollywood</p>
+          </div>
+        </div>
+      </div>
 
-<!-- Gallery Section -->
-<div id="gallery" class="container py-5">
-    <h2 class="display-4 text-center mb-4 text-white">Music Gallery</h2>
-    <div class="row">
-        <!-- Card 1 -->
-        <div class="col-md-4 mb-4">
-            <div class="card card-custom">
-                <img src="images/peace.jpg" class="card-img-top" alt="Album 1">
-                <div class="card-body">
-                    <h5 class="card-title">Peace </h5>
-                    <p class="card-text">A peace playlist wraps you in calming melodies, creating a serene atmosphere for relaxation and mindfulness.</p>
-                </div>
-            </div>
+      <!-- Singer 2 -->
+      <div class="singer-card">
+        <img src="singer2.jpg" alt="Singer 2">
+        <div class="overlay">
+          <div class="details">
+            <h4>Jane Smith</h4>
+            <p>Rock | Alternative</p>
+            <a href="https://www.instagram.com" target="_blank" class="social-icons">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.spotify.com" target="_blank" class="social-icons">
+              <i class="bi bi-spotify"></i>
+            </a>
+          </div>
         </div>
-        <!-- Card 2 -->
-        <div class="col-md-4 mb-4">
-            <div class="card card-custom">
-                <img src="images/monsson.jpg" class="card-img-top" alt="Album 2">
-                <div class="card-body">
-                    <h5 class="card-title">Monsoon </h5>
-                    <p class="card-text">A monsoon playlist captures the rhythm of rain, blending soothing melodies with nature's symphony to create a cozy, reflective mood.</p>
-                </div>
-            </div>
+      </div>
+
+      <!-- Singer 3 -->
+      <div class="singer-card">
+        <img src="singer3.jpg" alt="Singer 3">
+        <div class="overlay">
+          <div class="details">
+            <h4>Alice Johnson</h4>
+            <p>Jazz | Soul</p>
+            <a href="https://www.instagram.com" target="_blank" class="social-icons">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.spotify.com" target="_blank" class="social-icons">
+              <i class="bi bi-spotify"></i>
+            </a>
+          </div>
         </div>
-        <!-- Card 3 -->
-        <div class="col-md-4 mb-4">
-            <div class="card card-custom">
-                <img src="images/travel.jpg" class="card-img-top" alt="Album 3">
-                <div class="card-body">
-                    <h5 class="card-title">Travel </h5>
-                    <p class="card-text"> A travel playlist sparks adventure, with energetic tunes and laid-back rhythms that make every journey feel like a new exploration. </p>
-                </div>
-            </div>
+      </div>
+
+      <!-- Singer 4 -->
+      <div class="singer-card">
+        <img src="singer4.jpg" alt="Singer 4">
+        <div class="overlay">
+          <div class="details">
+            <h4>David Lee</h4>
+            <p>Hip-Hop | R&B</p>
+            <a href="https://www.instagram.com" target="_blank" class="social-icons">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.spotify.com" target="_blank" class="social-icons">
+              <i class="bi bi-spotify"></i>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </section>
 
-
-<!-- Parallax Section -->
-<div class="parallax"></div>
-
-<!-- Gallery Section -->
-<div id="gallery" class="container py-5">
-    <div class="row">
-        <!-- Card 1 -->
-        <div class="col-md-4 mb-4 ">
-            <div class="card card-custom">
-                <img src="images/happy.jpg" class="card-img-top" alt="Album 1">
-                <div class="card-body">
-                    <h5 class="card-title">Happy </h5>
-                    <p class="card-text">A happy playlist fills the air with upbeat tunes, spreading joy and positivity with every song.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="col-md-4 mb-4 ">
-            <div class="card card-custom">
-                <img src="images/lofi.jpg" class="card-img-top" alt="Album 2">
-                <div class="card-body">
-                    <h5 class="card-title">Lofi </h5>
-                    <p class="card-text">A lo-fi creates a chill, laid-back vibe, perfect for relaxing, studying, or unwinding after a long day.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-md-4 mb-4 ">
-            <div class="card card-custom">
-                <img src="images/rock.jpg" class="card-img-top" alt="Album 3">
-                <div class="card-body">
-                    <h5 class="card-title">Rock </h5>
-                    <p class="card-text"> rock  fuels your soul with electrifying riffs and raw energy, perfect for unleashing your inner rebel. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 Artist X. All rights reserved.</p>
-</footer>
-
-<!-- Bootstrap JS and Popper -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <!-- Bootstrap 5 and Icons CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 </body>
+
 </html>

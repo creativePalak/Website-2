@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlists</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="crazy.css" rel="stylesheet">
+
+    <!-- Custom Crazy CSS -->
+    <style>
+        /* Body Background */
+        body {
+            background-image: url("https://img.freepik.com/free-vector/glowing-musical-pentagram-background-with-sound-notes_1017-31220.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Card Styles for Albums */
+        .card-custom {
+            border: none;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+        }
+
+        .card-body h5 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-body p {
+            font-size: 1rem;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <h1 id="website-name">JamSpot</h1>
+            <button class="navbar-toggler btn btn-outline-dark" tclass="btn btn-primary" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex justify-content-center align-items-center flex-grow-1">
+                    <ul class="navbar-nav list-unstyled">
+                        <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
+                        <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
+                        <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
+                        <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
+                        </li>
+                        <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button class="btn m-2 join">Sign Up</button>
+                    <button class="btn m-2 join">Login</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- this is offcanvas code -->
+    <div class="container">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    <p class="fs-2 fw-medium">JamSpot</p>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+            </div>
+            <div class="offcanvas-body">
+                <div class="container-fluid">
+                    <ul class="d-flex align-items-center justify-content-center flex-column list-unstyled">
+                        <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
+                        <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
+                        <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
+                        <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
+                        </li>
+                        <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
+                    </ul>
+                    <div class="d-flex justify-content-end mt-5">
+                        <button class="btn btn-primary m-2 join text-white">Sign Up</button>
+                        <button class="btn m-2 join btn-outline-light text-white">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Gallery Section -->
+<div id="gallery" class="container py-5">
+    <h2 class="display-4 text-center mb-4 text-white">Music Gallery</h2>
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom">
+                <img src="images/peace.jpg" class="card-img-top" alt="Album 1">
+                <div class="card-body">
+                    <h5 class="card-title">Peace </h5>
+                    <p class="card-text">A peace playlist wraps you in calming melodies, creating a serene atmosphere for relaxation and mindfulness.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom">
+                <img src="images/monsson.jpg" class="card-img-top" alt="Album 2">
+                <div class="card-body">
+                    <h5 class="card-title">Monsoon </h5>
+                    <p class="card-text">A monsoon playlist captures the rhythm of rain, blending soothing melodies with nature's symphony to create a cozy, reflective mood.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom">
+                <img src="images/travel.jpg" class="card-img-top" alt="Album 3">
+                <div class="card-body">
+                    <h5 class="card-title">Travel </h5>
+                    <p class="card-text"> A travel playlist sparks adventure, with energetic tunes and laid-back rhythms that make every journey feel like a new exploration. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Parallax Section -->
+<div class="parallax"></div>
+
+<!-- Gallery Section -->
+<div id="gallery" class="container py-5">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4 ">
+            <div class="card card-custom">
+                <img src="images/happy.jpg" class="card-img-top" alt="Album 1">
+                <div class="card-body">
+                    <h5 class="card-title">Happy </h5>
+                    <p class="card-text">A happy playlist fills the air with upbeat tunes, spreading joy and positivity with every song.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4 ">
+            <div class="card card-custom">
+                <img src="images/lofi.jpg" class="card-img-top" alt="Album 2">
+                <div class="card-body">
+                    <h5 class="card-title">Lofi </h5>
+                    <p class="card-text">A lo-fi creates a chill, laid-back vibe, perfect for relaxing, studying, or unwinding after a long day.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4 ">
+            <div class="card card-custom">
+                <img src="images/rock.jpg" class="card-img-top" alt="Album 3">
+                <div class="card-body">
+                    <h5 class="card-title">Rock </h5>
+                    <p class="card-text"> rock  fuels your soul with electrifying riffs and raw energy, perfect for unleashing your inner rebel. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Artist X. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and Popper -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

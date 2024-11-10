@@ -1,78 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
-
-
-
-#back {
-    background-image: url("images/no-image.png");
-    width: 100%;
-    height: 70vh;
-    background-repeat: no-repeat;
+.main-container {
+    background-image: url("images/image.png");
+    background-position: center;
     background-size: cover;
-}
+    background-attachment: fixed;
+  }
 
-.col div a {
+  .songs {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(3, 3, 91, 0.989) 41%, rgba(9, 9, 88, 1) 60%, rgba(31, 60, 122, 0.930) 79%, rgba(0, 0, 0, 0.387) 100%);
+    cursor: pointer;
+  }
+
+  #search {
+    background-color: rgb(146, 146, 155);
+  }
+
+
+  .custom-img {
+    cursor: pointer;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .custom-img:hover {
+    transform: scale(1.05);
+  }
+
+  .songs:hover {
+    transform: scale(1.05);
+  }
+
+  .col div a {
     text-decoration: none;
     color: #b1b0d2;
-}
+  }
 
-.col div a:hover {
+  .col div a:hover {
     text-decoration: underline;
     color: white;
+  }
+
+  .welcome {
+    font-weight: bolder;
+  }
+
+  footer {
+    background-color: #211f1f;
 }
 
-
-
-body {
-    margin: 10px;
-    font-family: "Bricolage Grotesque", sans-serif;
-    overflow-x: hidden;
-
-    /* Some good gradiant color  */
-
-    background: linear-gradient(135deg, #1c1c2e, #4a00e0);
-    background: linear-gradient(135deg, #3d5afe, #1a237e, #512da8);
-    background-repeat: no-repeat;
-    /* background: linear-gradient(135deg, #001f3f, #005b5b, #009688); */
+footer a {
+    color: #bbb;
+    font-weight: 500;
+    text-decoration: none;
 }
 
-.offcanvas-body div ul {
-    list-style-type: none;
+.footer-icons a {
+    font-size: 1.5rem;
 }
 
-.join {
-    color: #b1b0d2;
+.footer-icons a:hover {
+    color: #F1C40F;
 }
-
-.joined {
-    color: white;
-}
-
-footer {
-    background-color: #1a237e;
-    background-color: #0d1b2a;
-    background: linear-gradient(135deg, #512da8, #000000);
-    background: linear-gradient(135deg, #512da8, #1c1c2e);
-}
-
-
-.box {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-}
-
-@media (max-width: 991.98px) {
-    .box {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .box {
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-    }
-}
-
-  
-  

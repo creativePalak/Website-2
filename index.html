@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <style>
     body {
       background: linear-gradient(90deg, #000000, #05031a, black);
@@ -21,7 +27,7 @@
     }
 
     .songs {
-      background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(3,3,91,0.989) 41%, rgba(9,9,88,1) 60%, rgba(31,60,122,0.930) 79%, rgba(0,0,0,0.387) 100%);
+      background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(3, 3, 91, 0.989) 41%, rgba(9, 9, 88, 1) 60%, rgba(31, 60, 122, 0.930) 79%, rgba(0, 0, 0, 0.387) 100%);
       cursor: pointer;
     }
 
@@ -29,8 +35,8 @@
       background-color: rgb(146, 146, 155);
     }
 
-  
-    .custom-img{
+
+    .custom-img {
       cursor: pointer;
       height: 200px;
       width: 100%;
@@ -46,179 +52,191 @@
     }
 
     .col div a {
-    text-decoration: none;
-    color: #b1b0d2;
-}
+      text-decoration: none;
+      color: #b1b0d2;
+    }
 
-.col div a:hover {
-    text-decoration: underline;
-    color: white;
-}
+    .col div a:hover {
+      text-decoration: underline;
+      color: white;
+    }
 
-.login-container {
-  max-height: 100%;
-  max-width: 100%;
-  background-image: url("images/Screenshot\ 2024-10-30\ 030309.png");
-  border-radius: 5%;
-  box-shadow: 1rem 1rem 3rem rgba(8, 12, 123, 0.7);
-}
-  
-.welcome{
-  font-weight:bolder;
-}
+    .login-container {
+      max-height: 100%;
+      max-width: 100%;
+      background-image: url("images/Screenshot\ 2024-10-30\ 030309.png");
+      border-radius: 5%;
+      box-shadow: 1rem 1rem 3rem rgba(8, 12, 123, 0.7);
+    }
 
+    .welcome {
+      font-weight: bolder;
+    }
   </style>
 </head>
+
 <body>
-  <main>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid text-white">
-        <h1 id="website-name" class="p-1"><i class="fa-solid fa-circle-play"></i>JamSpot</h1>
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="d-flex justify-content-center align-items-center flex-grow-1">
-            <ul class="navbar-nav">
-              <li class="nav-item h5 p-3"><a class="nav-link" href="index.html" id="tabs">Home</a></li>
-              <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
-              <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
-              <li class="nav-item h5 p-3"><a class="nav-link" href="playlist.html" id="tabs">Playlists</a></li>
-              <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
-            </ul>
-          </div>
-          <div class="d-flex justify-content-end">
-            <a href="sign.html"><button class="btn text-white join">Sign Up</button></a>
-            <a href="login.html"><button class="btn text-white join">Login</button></a>
-          </div>
-  </div>
-</div>  
-</nav>
-
-<!-- this is offcanvas code --> 
-<div class="container">
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel"><p class="fs-2 fw-medium">JamSpot</p></h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
-    </div>
-    <div class="offcanvas-body">
-      <div class="container-fluid">
-          <ul class="d-flex align-items-center justify-content-center flex-column list-unstyled">
-              <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
-              <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Artists</a></li>
-              <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
-              <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Albums</a></li>
-              <li class="nav-item h5 p-3"><a class="nav-link" href="#" id="tabs">Podcasts</a></li>
-              <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
-              <li class="nav-item h5 p-3 mt-5"><a class="nav-link" href="" id="tabs">Login</a></li>
-              <li class="nav-item h5 p-3 "><a class="nav-link" href="" id="tabs">Sign up</a></li>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <h1 id="website-name">JamSpot</h1>
+      <button class="navbar-toggler btn btn-outline-dark" tclass="btn btn-primary" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex justify-content-center align-items-center flex-grow-1">
+          <ul class="navbar-nav list-unstyled">
+            <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
+            </li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
           </ul>
+        </div>
+        <div class="d-flex justify-content-end">
+          <a href="sign.html"><button class="btn btn-primary m-2 join text-white">Sign Up</button></a>
+          <a href="login.html"><button class="btn m-2 join btn-outline-success">Login</button></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- this is offcanvas code -->
+  <div class="container">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <p class="fs-2 fw-medium">JamSpot</p>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+      </div>
+      <div class="offcanvas-body">
+        <div class="container-fluid">
+          <ul class="d-flex align-items-center justify-content-center flex-column list-unstyled">
+            <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
+            </li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
+          </ul>
+          <div class="d-flex justify-content-end mt-5">
+            <a href="sign.html"><button class="btn btn-primary m-2 join text-white">Sign Up</button></a>
+            <a href="login.html"><button class="btn m-2 join btn-outline-light text-white">Login</button></a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
 
   <div class="container-fluid">
     <div class="main-container p-4">
       <div class="d-flex justify-content-center">
-        <input class="form-control form-control-lg m-4 rounded-pill w-50" type="search" id="search" placeholder="Search">
+        <input class="form-control form-control-lg m-4 rounded-pill w-50" type="search" id="search"
+          placeholder="Search">
       </div>
       <div class="row">
-        <div class="col-12 col-md-6 m-2 text-white songs p-1 id="playPauseBtn1" onclick="toggleAudio('audio1', 'playPauseBtn1')"">
-            <div class="row align-items-center">
-                <div class="col-1 fs-4">01</div>
-                <div class="col d-flex">
-                    <img src="images/s1.jpeg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
-                    <div>
-                        <div class="fs-5">Tum Hi Ho</div>
-                        <small>Aashiqui 2</small>
-                    </div>
-                </div>
-                <div class="col-2 m-2">
-                    <i class="fa-solid fa-play m-2" id="playPauseBtn1" onclick="toggleAudio('audio1', 'playPauseBtn1')"></i>03:30
-                    <audio id="audio1" src="audio/Tum Hi Ho - Aashiqui 2 128 Kbps.mp3"></audio>
-                </div>
+        <div class="col-12 col-md-6 m-2 text-white songs p-1 id=" playPauseBtn1"
+          onclick="toggleAudio('audio1', 'playPauseBtn1')"">
+            <div class=" row align-items-center">
+          <div class="col-1 fs-4">01</div>
+          <div class="col d-flex">
+            <img src="images/s1.jpeg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
+            <div>
+              <div class="fs-5">Tum Hi Ho</div>
+              <small>Aashiqui 2</small>
             </div>
+          </div>
+          <div class="col-2 m-2">
+            <i class="fa-solid fa-play m-2" id="playPauseBtn1" onclick="toggleAudio('audio1', 'playPauseBtn1')"></i>
+            <audio id="audio1" src="audio/Tum Hi Ho - Aashiqui 2 128 Kbps.mp3"></audio>
+          </div>
         </div>
+      </div>
     </div>
-    
-      <div class="row">
-          <div class="col-12 col-md-6 m-2 text-white songs p-1 id="playPauseBtn2" onclick="toggleAudio('audio2', 'playPauseBtn2')"">
-              <div class="row align-items-center">
-                  <div class="col-1 fs-4">02</div>
-                  <div class="col d-flex">
-                      <img src="images/s2.jpg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
-                      <div>
-                          <div class="fs-5">Tum Hi Aana</div>
-                          <small>Marjaavaan</small>
-                      </div>
-                  </div>
-                  <div class="col-2 m-2">
-                      <i class="fa-solid fa-play m-2" id="playPauseBtn2" onclick="toggleAudio('audio2', 'playPauseBtn2')"></i>05:00
-                      <audio id="audio2" src="audio/Tum Hi Aana - Marjaavaan 128 Kbps.mp3"></audio>
-                  </div>
-              </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 m-2 text-white songs p-1 id=" playPauseBtn2"
+        onclick="toggleAudio('audio2', 'playPauseBtn2')"">
+              <div class=" row align-items-center">
+        <div class="col-1 fs-4">02</div>
+        <div class="col d-flex">
+          <img src="images/s2.jpg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
+          <div>
+            <div class="fs-5">Tum Hi Aana</div>
+            <small>Marjaavaan</small>
           </div>
+        </div>
+        <div class="col-2 m-2">
+          <i class="fa-solid fa-play m-2" id="playPauseBtn2" onclick="toggleAudio('audio2', 'playPauseBtn2')"></i>
+          <audio id="audio2" src="audio/Tum Hi Aana - Marjaavaan 128 Kbps.mp3"></audio>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-6 m-2 text-white songs p-1 id="playPauseBtn3" onclick="toggleAudio('audio3', 'playPauseBtn3')">
-          <div class="row align-items-center">
-            <div class="col-1 fs-4">03</div>
-            <div class="col d-flex">
-              <img src="images/s3.jpeg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
-              <div>
-                <div class="fs-5">Darasal</div>
-                <small class="">Raabta</small>
-              </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6 m-2 text-white songs p-1 id=" playPauseBtn3"
+      onclick="toggleAudio('audio3', 'playPauseBtn3')">
+      <div class="row align-items-center">
+        <div class="col-1 fs-4">03</div>
+        <div class="col d-flex">
+          <img src="images/s3.jpeg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
+          <div>
+            <div class="fs-5">Darasal</div>
+            <small class="">Raabta</small>
+          </div>
+        </div>
+        <div class="col-2 m-2">
+          <i class="fa-solid fa-play m-2" id="playPauseBtn3" onclick="toggleAudio('audio3', 'playPauseBtn3')"></i>
+          <audio id="audio3" src="audio/Darasal - Raabta 128 Kbps.mp3"></audio>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-6 m-2 text-white songs p-1 id=" playPauseBtn4"
+      onclick="toggleAudio('audio4', 'playPauseBtn4')">
+      <div class="row align-items-center">
+        <div class="col-1 fs-4">04</div>
+        <div class="col d-flex">
+          <img src="images/s4.jpg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
+          <div>
+            <div class="fs-5">Challa</div>
+            <small class="">Jab Tak Hai Jaan</small>
+          </div>
+        </div>
+        <div class="col-2 m-2">
+          <i class="fa-solid fa-play m-2" id="playPauseBtn4" onclick="toggleAudio('audio4', 'playPauseBtn4')"></i>
+          <audio id="audio4" src="audio/Challa - Jab Tak Hai Jaan 128 Kbps.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 m-2 text-white songs p-1 id=" playPauseBtn5"
+        onclick="toggleAudio('audio5', 'playPauseBtn5')">
+        <div class="row align-items-center">
+          <div class="col-1 fs-4">05</div>
+          <div class="col d-flex">
+            <img src="images/s5.jpg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
+            <div>
+              <div class="fs-5">Ve Kamleya</div>
+              <small class="">Rocky Aur Rani Ki Prem Khaani</small>
             </div>
-            <div class="col-2 m-2">
-              <i class="fa-solid fa-play m-2" id="playPauseBtn3" onclick="toggleAudio('audio3', 'playPauseBtn3')"></i>03:30
-              <audio id="audio3" src="audio/Darasal - Raabta 128 Kbps.mp3"></audio>
-            </div>
+          </div>
+          <div class="col-2 m-2">
+            <i class="fa-solid fa-play m-2" id="playPauseBtn5" onclick="toggleAudio('audio5', 'playPauseBtn5')"></i>
+            <audio id="audio5" src="audio/Ve Kamleya-(Mr-Jat.in).mp3"></audio>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-6 m-2 text-white songs p-1 id="playPauseBtn4" onclick="toggleAudio('audio4', 'playPauseBtn4')">
-          <div class="row align-items-center">
-            <div class="col-1 fs-4">04</div>
-            <div class="col d-flex">
-              <img src="images/s4.jpg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
-              <div>
-                <div class="fs-5">Challa</div>
-                <small class="">Jab Tak Hai Jaan</small>
-              </div>
-            </div>
-            <div class="col-2 m-2">
-              <i class="fa-solid fa-play m-2" id="playPauseBtn4" onclick="toggleAudio('audio4', 'playPauseBtn4')"></i>03:30
-              <audio id="audio4" src="audio/Challa - Jab Tak Hai Jaan 128 Kbps.mp3"></audio>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6 m-2 text-white songs p-1 id="playPauseBtn5" onclick="toggleAudio('audio5', 'playPauseBtn5')">
-          <div class="row align-items-center">
-            <div class="col-1 fs-4">05</div>
-            <div class="col d-flex">
-              <img src="images/s5.jpg" class="rounded me-4" style="height: 50px; width: 50px; object-fit: cover;">
-              <div>
-                <div class="fs-5">Ve Kamleya</div>
-                <small class="">Rocky Aur Rani Ki Prem Khaani</small>
-              </div>
-            </div>
-            <div class="col-2 m-2">
-              <i class="fa-solid fa-play m-2" id="playPauseBtn5" onclick="toggleAudio('audio5', 'playPauseBtn5')"></i>03:30
-              <audio id="audio5" src="audio/Ve Kamleya-(Mr-Jat.in).mp3"></audio>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6 m-2 text-white songs p-1 id="playPauseBtn6" onclick="toggleAudio('audio6', 'playPauseBtn6')">
+        <div class="col-12 col-md-6 m-2 text-white songs p-1 " id="playPauseBtn6"
+          onclick="toggleAudio('audio6', 'playPauseBtn6')">
           <div class="row align-items-center">
             <div class="col-1 fs-4">06</div>
             <div class="col d-flex">
@@ -229,166 +247,173 @@
               </div>
             </div>
             <div class="col-2 m-2">
-              <i class="fa-solid fa-play m-2" id="playPauseBtn6" onclick="toggleAudio('audio6', 'playPauseBtn6')"></i>03:30
+              <i class="fa-solid fa-play m-2" id="playPauseBtn6" onclick="toggleAudio('audio6', 'playPauseBtn6')"></i>
               <audio id="audio6" src="audio/Galliyan - Ek Villain 128 Kbps.mp3"></audio>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
 
-  <div class="container-fluid">
-    <div class="trending-songs">
-      <div class="row">
-        <div class="fs-2 text-white text-center mt-5 mb-4 fw-medium">Trending Songs</div>
-        <div class="col ms-5 p-3">
-          <img src="images/song1.jpg" class="rounded img-fluid custom-img" alt="Song 1">
-          <div class="fs-6 text-white text-center">Ranjha</div>
+    <div class="container-fluid">
+      <div class="trending-songs">
+        <div class="row">
+          <div class="fs-2 text-white text-center mt-5 mb-4 fw-medium">Trending Songs</div>
+          <div class="col ms-5 p-3" id="playPauseBtn7" onclick="toggleAudio('audio7', 'playPauseBtn7')"">
+          <img src=" images/song1.jpg" class="rounded img-fluid custom-img" alt="Song 1">
+            <audio id="audio7" src="audio/Ranjha Shershaah 128 Kbps.mp3"></audio>
+            <div class="fs-6 text-white text-center">Ranjha</div>
+          </div>
+          <div class="col p-3" id="playPauseBtn8" onclick="toggleAudio('audio8', 'playPauseBtn8')">
+            <img src="images/song2.jpg" class="rounded img-fluid custom-img" alt="Song 2">
+            <audio id="audio8" src="audio/Chaleya_320(PagalWorld.com.sb).mp3"></audio>
+            <div class="fs-6 text-white text-center">Chaleya</div>
+          </div>
+          <div class="col p-3" id="playPauseBtn9" onclick="toggleAudio('audio9', 'playPauseBtn9')">
+            <img src="images/song3.jpg" class="rounded img-fluid custom-img" alt="Song 3">
+            <audio id="audio9" src="audio/Shayad Love Aaj Kal 128 Kbps.mp3"></audio>
+            <div class="fs-6 text-white text-center">Shayaad</div>
+          </div>
+          <div class="col p-3" id="playPauseBtn10" onclick="toggleAudio('audio10', 'playPauseBtn10')">
+            <img src="images/song4.jpg" class="rounded img-fluid custom-img" alt="Song 4">
+            <audio id="audio10" src="audio/Pyaar Hota Kayi Baar Hai - Tu Jhoothi Main Makkar 128 Kbps.mp3"></audio>
+            <div class="fs-6 text-white text-center">Pyaar Hota Khai Baar Hai</div>
+          </div>
+          <div class="col p-3" id="playPauseBtn11" onclick="toggleAudio('audio11', 'playPauseBtn11')">
+            <img src="images/song5.jpg" class="rounded img-fluid custom-img" alt="Song 5">
+            <audio id="audio11" src="audio/_Heeriye_320(PagalWorld.com.sb).mp3"></audio>
+            <div class="fs-6 text-white text-center">Heeriye</div>
+          </div>
+          <div class="col me-4 p-3" id="playPauseBtn12" onclick="toggleAudio('audio12', 'playPauseBtn12')">
+            <img src="images/song6.jpeg" class="rounded img-fluid custom-img" alt="Song 6">
+            <audio id="audio12" src="audio/Kesariya_320(PagalWorld.com.sb).mp3"></audio>
+            <div class="fs-6 text-white text-center">Kesariya</div>
+          </div>
         </div>
-        <div class="col p-3">
-          <img src="images/song2.jpg" class="rounded img-fluid custom-img" alt="Song 2">
-          <div class="fs-6 text-white text-center">Chaleya</div>
+      </div>
+
+
+      <div class="top-artists">
+        <div class="row">
+          <div class="fs-2 text-white text-center mt-5 mb-4 fw-medium">Top Artists</div>
+          <div class="col ms-5 p-3">
+            <img src="images/arijit singh.jpeg" class="rounded-circle img-fluid custom-img" alt="Song 1">
+          </div>
+          <div class="col p-3">
+            <img src="images/shreya ghoshal.png" class="rounded-circle img-fluid custom-img" alt="Song 2">
+          </div>
+          <div class="col p-3">
+            <img src="images/atif aslam.png" class="rounded-circle img-fluid custom-img" alt="Song 2">
+          </div>
+          <div class="col p-3">
+            <img src="images/kk.jpg" class="rounded-circle img-fluid custom-img" alt="Song 2">
+          </div>
+          <div class="col p-3">
+            <img src="images/dr.jpg" class="rounded-circle img-fluid custom-img" alt="Song 2">
+          </div>
+          <div class="col me-4 p-3">
+            <img src="images/ks.jpg" class="rounded-circle img-fluid custom-img" alt="Song 6">
+          </div>
         </div>
-        <div class="col p-3">
-          <img src="images/song3.jpg" class="rounded img-fluid custom-img" alt="Song 3">
-          <div class="fs-6 text-white text-center">Shayaad</div>
+      </div>
+
+      <div class="90s">
+        <div class="row">
+          <div class="fs-2 text-white text-center mt-5 mb-4 fw-medium">90's Songs</div>
+          <div class="col ms-5 p-3">
+            <img src="images/90s1.jpg" class="rounded img-fluid custom-img" alt="Song 1">
+            <div class="fs-6 text-white text-center">Om Shanti Om</div>
+          </div>
+          <div class="col p-3">
+            <img src="images/90s2.jpg" class="rounded img-fluid custom-img" alt="Song 2">
+            <div class="fs-6 text-white text-center">Mohabbatein</div>
+          </div>
+          <div class="col p-3">
+            <img src="images/90s3.jpg" class="rounded img-fluid custom-img" alt="Song 3">
+            <div class="fs-6 text-white text-center">O Mere Dil Ke Chain</div>
+          </div>
+          <div class="col p-3">
+            <img src="images/90s4.jpg" class="rounded img-fluid custom-img" alt="Song 4">
+            <div class="fs-6 text-white text-center">Ek Ladki Ko Dekha Toh Esa Laga</div>
+          </div>
+          <div class="col p-3">
+            <img src="images/90s5.jpg" class="rounded img-fluid custom-img" alt="Song 5">
+            <div class="fs-6 text-white text-center">Kal Ho Nah Ho</div>
+          </div>
+          <div class="col me-4 p-3">
+            <img src="images/90s6.jpg" class="rounded img-fluid custom-img" alt="Song 6">
+            <div class="fs-6 text-white text-center">Ta Ra Rum Pum</div>
+          </div>
         </div>
-        <div class="col p-3">
-          <img src="images/song4.jpg" class="rounded img-fluid custom-img" alt="Song 4">
-          <div class="fs-6 text-white text-center">Pyaar Hota Khai Baar Hai</div>
-        </div>
-        <div class="col p-3">
-          <img src="images/song5.jpg" class="rounded img-fluid custom-img" alt="Song 5">
-          <div class="fs-6 text-white text-center">Heeriye</div>
-        </div>
-        <div class="col me-4 p-3">
-          <img src="images/song6.jpeg" class="rounded img-fluid custom-img" alt="Song 6">
-          <div class="fs-6 text-white text-center">Kesariya</div>
+      </div>
+
+      <div class="playlists">
+        <div class="row">
+          <div class="fs-2 text-white text-center mt-5 mb-4 fw-medium">Top Playlists</div>
+          <div class="col ms-5 p-3">
+            <img src="images/happy.jpg" class="rounded img-fluid custom-img" alt="Song 1">
+            <div class="fs-6 text-white text-center">Happy</div>
+          </div>
+          <div class="col p-3">
+            <img src="images/peace.jpg" class="rounded img-fluid custom-img" alt="Song 2">
+            <div class="fs-6 text-white text-center">Peaceful</div>
+          </div>
+          <div class="col p-3">
+            <img src="images/monsson.jpg" class="rounded img-fluid custom-img" alt="Song 3">
+            <div class="fs-6 text-white text-center">Monsoon</div>
+          </div>
+          <div class="col p-3">
+            <img src="images/rock.jpg" class="rounded img-fluid custom-img" alt="Song 4">
+            <div class="fs-6 text-white text-center">Rock</div>
+          </div>
+          <div class="col p-3">
+            <img src="images/lofi.jpg" class="rounded img-fluid custom-img" alt="Song 5">
+            <div class="fs-6 text-white text-center">Lofi</div>
+          </div>
+          <div class="col me-4 p-3">
+            <img src="images/travel.jpg" class="rounded img-fluid custom-img" alt="Song 6">
+            <div class="fs-6 text-white text-center">Travel</div>
+          </div>
         </div>
       </div>
     </div>
 
 
-    <div class="top-artists">
-      <div class="row">
-        <div class="fs-2 text-white text-center mt-5 mb-4 fw-medium">Top Artists</div>
-        <div class="col ms-5 p-3">
-          <img src="images/arijit singh.jpeg" class="rounded-circle img-fluid custom-img" alt="Song 1">
-        </div>
-        <div class="col p-3">
-          <img src="images/shreya ghoshal.png" class="rounded-circle img-fluid custom-img" alt="Song 2">
-        </div>
-        <div class="col p-3">
-          <img src="images/atif aslam.png" class="rounded-circle img-fluid custom-img" alt="Song 2">
-        </div>
-        <div class="col p-3">
-          <img src="images/kk.jpg" class="rounded-circle img-fluid custom-img" alt="Song 2">
-        </div>
-        <div class="col p-3">
-          <img src="images/dr.jpg" class="rounded-circle img-fluid custom-img" alt="Song 2">
-        </div>
-        <div class="col me-4 p-3">
-          <img src="images/ks.jpg" class="rounded-circle img-fluid custom-img" alt="Song 6">
-        </div>
-      </div>
-    </div>
-
-    <div class="90s">
-      <div class="row">
-        <div class="fs-2 text-white text-center mt-5 mb-4 fw-medium">90's Songs</div>
-        <div class="col ms-5 p-3">
-          <img src="images/90s1.jpg" class="rounded img-fluid custom-img" alt="Song 1">
-          <div class="fs-6 text-white text-center">Om Shanti Om</div>
-        </div>
-        <div class="col p-3">
-          <img src="images/90s2.jpg" class="rounded img-fluid custom-img" alt="Song 2">
-          <div class="fs-6 text-white text-center">Mohabbatein</div>
-        </div>
-        <div class="col p-3">
-          <img src="images/90s3.jpg" class="rounded img-fluid custom-img" alt="Song 3">
-          <div class="fs-6 text-white text-center">O Mere Dil Ke Chain</div>
-        </div>
-        <div class="col p-3">
-          <img src="images/90s4.jpg" class="rounded img-fluid custom-img" alt="Song 4">
-          <div class="fs-6 text-white text-center">Ek Ladki Ko Dekha Toh Esa Laga</div>
-        </div>
-        <div class="col p-3">
-          <img src="images/90s5.jpg" class="rounded img-fluid custom-img" alt="Song 5">
-          <div class="fs-6 text-white text-center">Kal Ho Nah Ho</div>
-        </div>
-        <div class="col me-4 p-3">
-          <img src="images/90s6.jpg" class="rounded img-fluid custom-img" alt="Song 6">
-          <div class="fs-6 text-white text-center">Ta Ra Rum Pum</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="playlists">
-      <div class="row">
-        <div class="fs-2 text-white text-center mt-5 mb-4 fw-medium">Top Playlists</div>
-        <div class="col ms-5 p-3">
-          <img src="images/happy.jpg" class="rounded img-fluid custom-img" alt="Song 1">
-          <div class="fs-6 text-white text-center">Happy</div>
-        </div>
-        <div class="col p-3">
-          <img src="images/peace.jpg" class="rounded img-fluid custom-img" alt="Song 2">
-          <div class="fs-6 text-white text-center">Peaceful</div>
-        </div>
-        <div class="col p-3">
-          <img src="images/monsson.jpg" class="rounded img-fluid custom-img" alt="Song 3">
-          <div class="fs-6 text-white text-center">Monsoon</div>
-        </div>
-        <div class="col p-3">
-          <img src="images/rock.jpg" class="rounded img-fluid custom-img" alt="Song 4">
-          <div class="fs-6 text-white text-center">Rock</div>
-        </div>
-        <div class="col p-3">
-          <img src="images/lofi.jpg" class="rounded img-fluid custom-img" alt="Song 5">
-          <div class="fs-6 text-white text-center">Lofi</div>
-        </div>
-        <div class="col me-4 p-3">
-          <img src="images/travel.jpg" class="rounded img-fluid custom-img" alt="Song 6">
-          <div class="fs-6 text-white text-center">Travel</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
-  <script>
-    function toggleAudio(audioId, buttonId) {
+    <script>
+      function toggleAudio(audioId, buttonId) {
         const audio = document.getElementById(audioId);
         const button = document.getElementById(buttonId);
 
         // Check if the audio is currently playing
         if (audio.paused) {
-            // Pause other audios
-            const audios = document.querySelectorAll('audio');
-            audios.forEach(otherAudio => {
-                if (otherAudio !== audio) {
-                    otherAudio.pause();
-                    otherAudio.currentTime = 0; // Reset the other audio
-                    // Reset the button to play icon
-                    const otherButton = document.querySelector(`i[id="${otherAudio.id.replace('audio', 'playPauseBtn')}"]`);
-                    if (otherButton) {
-                        otherButton.classList.remove('fa-pause');
-                        otherButton.classList.add('fa-play');
-                    }
-                }
-            });
+          // Pause other audios
+          const audios = document.querySelectorAll('audio');
+          audios.forEach(otherAudio => {
+            if (otherAudio !== audio) {
+              otherAudio.pause();
+              otherAudio.currentTime = 0; // Reset the other audio
+              // Reset the button to play icon
+              const otherButton = document.querySelector(`i[id="${otherAudio.id.replace('audio', 'playPauseBtn')}"]`);
+              if (otherButton) {
+                otherButton.classList.remove('fa-pause');
+                otherButton.classList.add('fa-play');
+              }
+            }
+          });
 
-            // Play the audio
-            audio.play();
-            button.classList.remove('fa-play');
-            button.classList.add('fa-pause');
+          // Play the audio
+          audio.play();
+          button.classList.remove('fa-play');
+          button.classList.add('fa-pause');
         } else {
-            // Pause the audio
-            audio.pause();
-            button.classList.remove('fa-pause');
-            button.classList.add('fa-play');
+          // Pause the audio
+          audio.pause();
+          button.classList.remove('fa-pause');
+          button.classList.add('fa-play');
         }
-    }
-</script>
+      }
+    </script>
 </body>
+
 </html>
