@@ -18,23 +18,23 @@
             background-attachment: fixed;
         }
 
-        .heading{
+        .heading {
             color: #e8c9ff;
-            font-size: 3.5rem ;
+            font-size: 3.5rem;
             text-shadow: 5px 10px 20px blue;
         }
 
-        .card .list{
+        .card .list {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .card:hover {
-            background: linear-gradient(120deg,rgb(2, 2, 87),rgb(98, 3, 79));
+            background: linear-gradient(120deg, rgb(2, 2, 87), rgb(98, 3, 79));
             transform: translateY(-10px);
             box-shadow: 0 10px 12px rgba(167, 165, 245, 0.5);
         }
 
-        .list:hover{
+        .list:hover {
             color: rgb(214, 168, 0);
             font-size: 1.5rem;
         }
@@ -53,7 +53,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="d-flex justify-content-center align-items-center flex-grow-1">
                     <ul class="navbar-nav list-unstyled">
-                        <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
+                        <li class="nav-item h5 p-3 "><a class="nav-link" href="home.html" id="tabs">Home</a></li>
                         <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
                         <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
                         <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
@@ -72,8 +72,7 @@
 
     <!-- this is offcanvas code -->
     <div class="container">
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas offcanvas-start" tab="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel">
                     <p class="fs-2 fw-medium">JamSpot</p>
@@ -84,7 +83,7 @@
             <div class="offcanvas-body">
                 <div class="container-fluid">
                     <ul class="d-flex align-items-center justify-content-center flex-column list-unstyled">
-                        <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
+                        <li class="nav-item h5 p-3 "><a class="nav-link" href="home.html" id="tabs">Home</a></li>
                         <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
                         <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
                         <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
@@ -93,7 +92,8 @@
                     </ul>
                     <div class="d-flex justify-content-end mt-5">
                         <a href="sign.html"><button class="btn btn-primary m-2 join text-white">Sign Up</button></a>
-                        <a href="login.html"><button class="btn m-2 join btn-outline-light text-white">Login</button></a>
+                        <a href="login.html"><button
+                                class="btn m-2 join btn-outline-light text-white">Login</button></a>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,8 @@
             <div class="col d-lg-none">
                 <p class=" fw-bolder text-center heading ">Join the Premium</p>
             </div>
-            <div class="col d-flex justify-content-center align-items-center col-lg-8"> <img src="https://png.pngtree.com/thumb_back/fh260/background/20230627/pngtree-d-mobile-marketing-passive-income-coins-and-banknotes-floating-on-a-image_3687396.jpg"
+            <div class="col d-flex justify-content-center align-items-center col-lg-8"> <img
+                    src="https://png.pngtree.com/thumb_back/fh260/background/20230627/pngtree-d-mobile-marketing-passive-income-coins-and-banknotes-floating-on-a-image_3687396.jpg"
                     class="rounded-5 img-fluid m-3" alt=""></div>
             <div class="col d-flex align-items-center justify-content-center flex-column m-2 m-lg-0 col-lg-4 ">
                 <p class=" d-none d-lg-block text-center fs-1 fw-bold ">Join the Premium</p>
@@ -361,21 +362,22 @@
         <div class="container text-center text-white p-5">
             <div class="row">
                 <div class="col">
-                    <div><a href="#">JamSpot</a></div>
+                    <div><a href="#" class="fs-1 text-white text-decoration-none fw-semibold head">JamSpot</a></div>
                     <div>&copy; 2024 JamSpot. All rights not reserved.</div>
                 </div>
-                <div class="col footer-icons m-3">
-                    <a href="#"><i class="bi bi-instagram p-2"></i></a>
-                    <a href="#"><i class="bi bi-twitter-x p-2"></i></a>
-                    <a href="#"><i class="bi bi-facebook p-2"></i></a>
-                    <a href="#"><i class="bi bi-youtube p-2"></i></a>
-                    <a href="#"><i class="bi bi-spotify p-2"></i></a>
+                <div class="col fs-4">
+                    <a href="#" class="text-white"><i class="bi bi-instagram p-1"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-twitter-x p-1"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-facebook p-1"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-youtube p-1"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-spotify p-1"></i></a>
                 </div>
-                <div class="col ">
-                    <div><a href="#">Legal & Privacy</a></div>
-                    <div><a href="#">Privacy Policy</a></div>
-                    <div><a href="#">Terms & Conditions</a></div>
-                    <div><a href="#"><i class="bi bi-cookie"></i> Cookie Policy</a></div>
+                <div class="col">
+                    <div><a href="#" class="text-white text-decoration-none">Legal & Privacy</a></div>
+                    <div><a href="#" class="text-white text-decoration-none">Privacy Policy</a></div>
+                    <div><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></div>
+                    <div><a href="#" class="text-white text-decoration-none"><i class="bi bi-cookie"></i> Cookie
+                            Policy</a></div>
                 </div>
             </div>
         </div>

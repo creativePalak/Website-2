@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme = "dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +9,12 @@
   <!-- Custom CSS -->
   <link href="crazy.css" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
+    body{
+      background: linear-gradient(120deg, rgba(84,7,41,1) 0%, rgba(0,22,47,1) 100%);
     }
 
-    .singers-section {
-      background-color: #1a1a1a;
+    .navbar {
       color: white;
-      padding: 4rem 0;
-      text-align: center;
     }
 
     .singers-section h2 {
@@ -30,7 +24,6 @@
 
     .singer-card {
       position: relative;
-      background-color: #333;
       margin: 15px;
       border-radius: 15px;
       overflow: hidden;
@@ -71,11 +64,6 @@
       opacity: 1;
     }
 
-    .singer-card .overlay .details {
-      text-align: center;
-      color: white;
-    }
-
     .singer-card .overlay .details h4 {
       font-size: 2rem;
       font-family: 'Russo One', sans-serif;
@@ -87,23 +75,6 @@
       margin-bottom: 15px;
     }
 
-    .social-icons a {
-      color: #FF6347;
-      font-size: 1.5rem;
-      margin: 0 10px;
-      transition: color 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      color: #ffffff;
-    }
-
-    @media (max-width: 768px) {
-      .singer-card {
-        width: 100%;
-      }
-    }
-
     .singer-gallery {
       display: flex;
       flex-wrap: wrap;
@@ -112,77 +83,78 @@
     }
 
     .singer-card {
-      width: 280px;
-      height: 350px;
+      width: 20rem;
+      height: 20rem;
     }
+
   </style>
 </head>
 <body>
+
   <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
-            <h1 id="website-name">JamSpot</h1>
-            <button class="navbar-toggler btn btn-outline-dark" tclass="btn btn-primary" type="button"
-                data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="d-flex justify-content-center align-items-center flex-grow-1">
-                    <ul class="navbar-nav list-unstyled">
-                        <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
-                        </li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
-                    </ul>
-                </div>
-                <div class="d-flex justify-content-end">
-                    <button class="btn m-2 join">Sign Up</button>
-                    <button class="btn m-2 join">Login</button>
-                </div>
-            </div>
+    <div class="container-fluid">
+      <h1 id="website-name">JamSpot</h1>
+      <button class="navbar-toggler btn btn-outline-dark" class="btn btn-primary" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex justify-content-center align-items-center flex-grow-1">
+          <ul class="navbar-nav list-unstyled">
+            <li class="nav-item h5 p-3 "><a class="nav-link" href="home.html" id="tabs">Home</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
+            </li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
+          </ul>
         </div>
+        <div class="d-flex justify-content-end">
+          <a href="sign.html"><button class="btn btn-outline-light m-2 join">Sign Up</button></a>
+            <a href="login.html"><button class="btn m-2 join text-white">Login</button></a>
         </div>
-    </nav>
-
-    <!-- this is offcanvas code -->
-    <div class="container">
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                    <p class="fs-2 fw-medium">JamSpot</p>
-                </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
-            </div>
-            <div class="offcanvas-body">
-                <div class="container-fluid">
-                    <ul class="d-flex align-items-center justify-content-center flex-column list-unstyled">
-                        <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
-                        </li>
-                        <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
-                    </ul>
-                    <div class="d-flex justify-content-end mt-5">
-                        <button class="btn btn-primary m-2 join text-white">Sign Up</button>
-                        <button class="btn m-2 join btn-outline-light text-white">Login</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    </div>
+  </nav>
+
+  <!-- this is offcanvas code -->
+  <div class="container">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <p class="fs-2 fw-medium">JamSpot</p>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+      </div>
+      <div class="offcanvas-body">
+        <div class="container-fluid">
+          <ul class="d-flex align-items-center justify-content-center flex-column list-unstyled">
+            <li class="nav-item h5 p-3 "><a class="nav-link" href="home.html" id="tabs">Home</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
+            </li>
+            <li class="nav-item h5 p-3"><a class="nav-link" href="pro.html" id="tabs">Pro</a></li>
+          </ul>
+          <div class="d-flex justify-content-end mt-5">
+            <a href="sign.html"><button class="btn btn-primary m-2 join text-white">Sign Up</button></a>
+            <a href="login.html"><button class="btn m-2 join btn-outline-light text-white">Login</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Singers Section -->
   <section class="singers-section" id="singers">
-    <h2>Meet the Singers</h2>
+    <h2 class="text-center text-white">Meet the Singers</h2>
     <div class="singer-gallery container">
       <!-- Singer 1 -->
       <div class="singer-card">
         <img src="images/shreya.jpg" alt="Singer 1">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>Shreya Ghoshal</h4>
             <p>Bollywood</p>
@@ -193,16 +165,10 @@
       <!-- Singer 2 -->
       <div class="singer-card">
         <img src="images/arijit.webp" alt="Singer 2">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>Arijit Singh</h4>
             <p>Bollywood | Indian Pop</p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -210,16 +176,10 @@
       <!-- Singer 6 -->
       <div class="singer-card">
         <img src="images/eminem.jpg" alt="Singer 4">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>Eminem</h4>
             <p>Hip-Hop | Rap | Hardcore Rap</p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -227,16 +187,10 @@
       <!-- Singer 3 -->
       <div class="singer-card">
         <img src="images/weekend.jpg" alt="Singer 4">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>The Weeknd</h4>
             <p>R&B | Pop | Alternative R&B</p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div> 
@@ -244,16 +198,10 @@
       <!-- Singer 5 -->
       <div class="singer-card">
         <img src="images/sidhu.jpg" alt="Singer 4">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>Sidhu Moose Wala</h4>
             <p>Punjabi Hip-Hop | Punjabi Pop | Rap</p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -261,16 +209,10 @@
       <!-- Singer 6 -->
       <div class="singer-card">
         <img src="images/lana.jpeg" alt="Singer 4">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>Lana Del Rey </h4>
             <p>Baroque Pop | Alternative Rock</p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -279,16 +221,10 @@
       <!-- Singer 7 -->
       <div class="singer-card">
         <img src="images/carti.jpg" alt="Singer 4">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>Playboi Carti</h4>
             <p>Trap | Punk Rap</p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -296,16 +232,10 @@
       <!-- Singer 8 -->
       <div class="singer-card">
         <img src="images/paji2.jpg" alt="Singer 4">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>Honey Singh</h4>
             <p> Punjabi Hip-Hop | Punjabi Pop | Rap</p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -313,16 +243,10 @@
       <!-- Singer 9 -->
       <div class="singer-card">
         <img src="images/dosanj.jpeg" alt="Singer 4">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>DILJIT DOSANJH</h4>
             <p>Punjabi Pop | Bhangra | Bollywood</p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -330,16 +254,10 @@
       <!-- Singer 10 -->
       <div class="singer-card">
         <img src="images/travis.jpg" alt="Singer 4">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>Travis Scott</h4>
             <p>Hip-Hop | Rap | Trap</p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -347,16 +265,10 @@
       <!-- Singer 11 -->
       <div class="singer-card">
         <img src="images/cigerate.webp" alt="Singer 4">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>Cigarettes After Sex</h4>
             <p>Dream Pop | Indie Pop | Ambient Pop</p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -364,16 +276,10 @@
       <!-- Singer 12 -->
       <div class="singer-card">
         <img src="images/aujla.webp" alt="Singer 4">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>Karan Aujla</h4>
             <p>Punjabi Hip-Hop | Punjabi Pop </p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -381,16 +287,10 @@
       <!-- Singer 13 -->
       <div class="singer-card">
         <img src="images/tailor.jpg" alt="Singer 4">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>Taylor Swift</h4>
             <p>Country | Indie Folk | Alternative Rock</p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -398,69 +298,50 @@
       <!-- Singer 14 -->
       <div class="singer-card">
         <img src="images/bprak.jpeg" alt="Singer 3">
-        <div class="overlay">
+        <div class="overlay text-center">
           <div class="details">
             <h4>B PRAAK</h4>
             <p>Punjabi Pop | Bollywood</p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div>
-
-      
 
       <!-- Singer 15-->
       <div class="singer-card">
-        <img src="images/ed.webp"Singer 4">
-        <div class="overlay">
+        <img src="images/ed.webp" alt="Singer 4">
+        <div class="overlay text-center">
           <div class="details">
             <h4>Ed Sheeran</h4>
             <p>Folk Pop | Acoustic Pop</p>
-            <a href="https://www.instagram.com" target="_blank" class="social-icons">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://www.spotify.com" target="_blank" class="social-icons">
-              <i class="bi bi-spotify"></i>
-            </a>
           </div>
         </div>
       </div>
-
-
-
-
-
     </div>
   </section>
 
   <footer>
     <div class="container text-center text-white p-5">
-        <div class="row">
-            <div class="col">
-                <div><a href="#">JamSpot</a></div>
-                <div>&copy; 2024 JamSpot. All rights not reserved.</div>
-            </div>
-            <div class="col footer-icons m-3">
-                <a href="#"><i class="bi bi-instagram p-2"></i></a>
-                <a href="#"><i class="bi bi-twitter-x p-2"></i></a>
-                <a href="#"><i class="bi bi-facebook p-2"></i></a>
-                <a href="#"><i class="bi bi-youtube p-2"></i></a>
-                <a href="#"><i class="bi bi-spotify p-2"></i></a>
-            </div>
-            <div class="col ">
-                <div><a href="#">Legal & Privacy</a></div>
-                <div><a href="#">Privacy Policy</a></div>
-                <div><a href="#">Terms & Conditions</a></div>
-                <div><a href="#"><i class="bi bi-cookie"></i> Cookie Policy</a></div>
-            </div>
+      <div class="row">
+        <div class="col">
+          <div><a href="#" class="fs-1 text-white text-decoration-none fw-semibold head">JamSpot</a></div>
+          <div>&copy; 2024 JamSpot. All rights not reserved.</div>
         </div>
+        <div class="col fs-4">
+          <a href="#" class="text-white"><i class="bi bi-instagram p-1"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-twitter-x p-1"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-facebook p-1"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube p-1"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-spotify p-1"></i></a>
+        </div>
+        <div class="col">
+          <div><a href="#" class="text-white text-decoration-none">Legal & Privacy</a></div>
+          <div><a href="#" class="text-white text-decoration-none">Privacy Policy</a></div>
+          <div><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></div>
+          <div><a href="#" class="text-white text-decoration-none"><i class="bi bi-cookie"></i> Cookie Policy</a></div>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
 
   <!-- Bootstrap 5 and Icons CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

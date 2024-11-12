@@ -52,14 +52,6 @@
         .card-body p {
             font-size: 1rem;
         }
-
-        /* Footer Section */
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
@@ -75,7 +67,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="d-flex justify-content-center align-items-center flex-grow-1">
           <ul class="navbar-nav list-unstyled">
-            <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
+            <li class="nav-item h5 p-3 "><a class="nav-link" href="home.html" id="tabs">Home</a></li>
             <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
             <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
             <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
@@ -94,7 +86,7 @@
 
   <!-- this is offcanvas code -->
   <div class="container">
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-start" tab="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">
           <p class="fs-2 fw-medium">JamSpot</p>
@@ -105,7 +97,7 @@
       <div class="offcanvas-body">
         <div class="container-fluid">
           <ul class="d-flex align-items-center justify-content-center flex-column list-unstyled">
-            <li class="nav-item h5 p-3 "><a class="nav-link" href="index.html" id="tabs">Home</a></li>
+            <li class="nav-item h5 p-3 "><a class="nav-link" href="home.html" id="tabs">Home</a></li>
             <li class="nav-item h5 p-3"><a class="nav-link" href="artists.html" id="tabs">Artists</a></li>
             <li class="nav-item h5 p-3"><a class="nav-link" href="features.html" id="tabs">Features</a></li>
             <li class="nav-item h5 p-3"><a class="nav-link" href="playlists.html" id="tabs">Playlists</a>
@@ -202,27 +194,27 @@
 <!-- Footer -->
 <footer>
     <div class="container text-center text-white p-5">
-        <div class="row">
-            <div class="col">
-                <div><a href="#">JamSpot</a></div>
-                <div>&copy; 2024 JamSpot. All rights not reserved.</div>
-            </div>
-            <div class="col footer-icons m-3">
-                <a href="#"><i class="bi bi-instagram p-2"></i></a>
-                <a href="#"><i class="bi bi-twitter-x p-2"></i></a>
-                <a href="#"><i class="bi bi-facebook p-2"></i></a>
-                <a href="#"><i class="bi bi-youtube p-2"></i></a>
-                <a href="#"><i class="bi bi-spotify p-2"></i></a>
-            </div>
-            <div class="col ">
-                <div><a href="#">Legal & Privacy</a></div>
-                <div><a href="#">Privacy Policy</a></div>
-                <div><a href="#">Terms & Conditions</a></div>
-                <div><a href="#"><i class="bi bi-cookie"></i> Cookie Policy</a></div>
-            </div>
+      <div class="row">
+        <div class="col">
+          <div><a href="#" class="fs-1 text-white text-decoration-none fw-semibold head">JamSpot</a></div>
+          <div>&copy; 2024 JamSpot. All rights not reserved.</div>
         </div>
+        <div class="col fs-4">
+          <a href="#" class="text-white"><i class="bi bi-instagram p-1"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-twitter-x p-1"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-facebook p-1"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-youtube p-1"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-spotify p-1"></i></a>
+        </div>
+        <div class="col">
+          <div><a href="#" class="text-white text-decoration-none">Legal & Privacy</a></div>
+          <div><a href="#" class="text-white text-decoration-none">Privacy Policy</a></div>
+          <div><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></div>
+          <div><a href="#" class="text-white text-decoration-none"><i class="bi bi-cookie"></i> Cookie Policy</a></div>
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
 
 <!-- Bootstrap JS and Popper -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

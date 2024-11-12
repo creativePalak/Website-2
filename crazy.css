@@ -1,63 +1,48 @@
-.main-container {
-    background-image: url("images/image.png");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
 
-  .songs {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(3, 3, 91, 0.989) 41%, rgba(9, 9, 88, 1) 60%, rgba(31, 60, 122, 0.930) 79%, rgba(0, 0, 0, 0.387) 100%);
-    cursor: pointer;
-  }
+#website-name {
+    color: #ffffff;
+}
 
-  #search {
-    background-color: rgb(146, 146, 155);
-  }
+.nav
 
+.navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
 
-  .custom-img {
-    cursor: pointer;
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-  }
+.offcanvas-body .nav-link:hover {
+    color: #000cb0;
+}
 
-  .custom-img:hover {
-    transform: scale(1.05);
-  }
+footer {
+    background-color: rgb(31, 30, 30);
+}
 
-  .songs:hover {
-    transform: scale(1.05);
-  }
+footer i:hover{
+    color: yellow;
+}
 
-  .col div a {
-    text-decoration: none;
-    color: #b1b0d2;
-  }
-
-  .col div a:hover {
-    text-decoration: underline;
-    color: white;
-  }
-
-  .welcome {
+.welcome {
     font-weight: bolder;
-  }
-
-  footer {
-    background-color: #211f1f;
 }
 
-footer a {
-    color: #bbb;
-    font-weight: 500;
-    text-decoration: none;
+.box {
+    background: linear-gradient(90deg, rgb(59, 17, 60), rgb(21, 7, 62));
+    box-shadow: 0 05px 20px #19122ca1;
+    transition: transform 0.3s ease;
 }
 
-.footer-icons a {
-    font-size: 1.5rem;
+.box:hover {
+    transform: translateX(40px);
+    background-color: #000cb0;
 }
 
-.footer-icons a:hover {
-    color: #F1C40F;
+.box img {
+    transition: transform 0.8s ease;
+    height: 15rem;
+    width: 15rem;
 }
+
+.box img:hover {
+    transform: scale(1.06);
+}
+
